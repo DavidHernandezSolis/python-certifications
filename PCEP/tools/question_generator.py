@@ -16,7 +16,7 @@ from pathlib import Path
 # Base Paths
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 QUESTIONS_DIR = BASE_DIR / "data" / "questions"
-QUESTIONS_JS_FILE = BASE_DIR / "website" / "questions_db.js"
+QUESTIONS_JS_FILE = BASE_DIR / "docs" / "questions_db.js"
 
 # Asegurar directorios
 QUESTIONS_DIR.mkdir(parents=True, exist_ok=True)
@@ -708,13 +708,13 @@ def main():
         f.write(js_content)
     print(f"Base de datos PWA actualizada en: {QUESTIONS_JS_FILE}")
 
-    # Cargar y empaquetar los .md reales del disco en website/modules_db.js
+    # Cargar y empaquetar los .md reales del disco en docs/modules_db.js
     print("Empaquetando archivos Markdown (.md) reales del disco...")
     md_data = load_markdown_files()
     md_content = f"const PCEP_MODULES = {json.dumps(md_data, indent=2, ensure_ascii=False)};\n"
-    with open(BASE_DIR / "website" / "modules_db.js", "w", encoding="utf-8") as f:
+    with open(BASE_DIR / "docs" / "modules_db.js", "w", encoding="utf-8") as f:
         f.write(md_content)
-    print(f"Archivos Markdown empaquetados con éxito en website/modules_db.js")
+    print(f"Archivos Markdown empaquetados con éxito en docs/modules_db.js")
     
     print("¡Generación procedimental finalizada con éxito!")
 

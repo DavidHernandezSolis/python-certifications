@@ -39,14 +39,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 30",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -89,14 +89,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 30",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -139,14 +139,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 30",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -189,14 +189,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 5",
+      "A) 10",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -289,10 +289,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 20",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -389,14 +389,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 30",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -439,14 +439,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -539,14 +539,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 30",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -639,9 +639,9 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
+      "A) 15",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -689,14 +689,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 5",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -739,10 +739,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -789,10 +789,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -839,10 +839,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -889,10 +889,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 45",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -939,9 +939,9 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
+      "A) 10",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -1039,14 +1039,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1089,10 +1089,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -1139,9 +1139,9 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
+      "A) 15",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -1189,9 +1189,9 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
+      "A) 15",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -1239,14 +1239,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 5",
+      "A) 10",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1339,9 +1339,9 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
+      "A) 15",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -1389,14 +1389,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 30",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1489,14 +1489,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 5",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1539,10 +1539,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 45",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -1589,9 +1589,9 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
+      "A) 10",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -1689,14 +1689,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 5",
+      "A) 15",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1739,14 +1739,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 5",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1789,10 +1789,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 45",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -1839,14 +1839,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 5",
+      "A) 15",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1889,14 +1889,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1939,14 +1939,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 45",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -1989,14 +1989,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 5",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -2039,14 +2039,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 20",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -2089,14 +2089,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 20",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -2139,10 +2139,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 30",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -2189,10 +2189,10 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 20",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -2239,14 +2239,14 @@
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 30",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
