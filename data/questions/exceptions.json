@@ -1,0 +1,2277 @@
+[
+  {
+    "id": "PCEP-6004",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "SyntaxError catch",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Understand",
+    "pattern": "Conceptual",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "syntaxerror",
+      "compilation"
+    ],
+    "question": "¿Por qué un SyntaxError no se puede atrapar con un bloque try-except en caliente en el mismo script?",
+    "options": [
+      "A) Porque no es una clase heredada de Exception.",
+      "B) Porque ocurre durante la fase de compilación del código a bytecode, impidiendo que el script inicie ejecución.",
+      "C) Porque no está contemplado en la librería estándar.",
+      "D) Sí se puede capturar en cualquier circunstancia."
+    ],
+    "correct": "B",
+    "explanation": "Los SyntaxError se detectan durante la fase de análisis sintáctico o compilación de Python. Dado que ocurre antes de la ejecución de cualquier línea de código, el bloque try-except aún no está activo."
+  },
+  {
+    "id": "PCEP-6300-000",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-001",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-002",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-003",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-004",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-005",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-006",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-007",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-008",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-009",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-010",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-011",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-012",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-013",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-014",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-015",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-016",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-017",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-018",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-019",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-020",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-021",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-022",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-023",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-024",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-025",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-026",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-027",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-028",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-029",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-030",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-031",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-032",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-033",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-034",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-035",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-036",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-037",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-038",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-039",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-040",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-041",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-042",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-043",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-044",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-045",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-046",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-047",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-048",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-049",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-050",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-051",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-052",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-053",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-054",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-055",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-056",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-057",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-058",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-059",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-060",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-061",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-062",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-063",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-064",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-065",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-066",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-067",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-068",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-069",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-070",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-071",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-072",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-073",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-074",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-075",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-076",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-077",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-078",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-079",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-080",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-081",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-082",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-083",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-084",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-085",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-086",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-087",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  },
+  {
+    "id": "PCEP-6300-088",
+    "module": "exceptions",
+    "topic": "Hierarchy",
+    "subtopic": "Exception Catch scoping",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "inheritance"
+    ],
+    "question": "¿Qué imprime la ejecución de este fragmento de código?\n\ntry:\n    l = [1, 2]\n    print(l[5])\nexcept LookupError:\n    print(\"lookup\")\nexcept IndexError:\n    print(\"index\")",
+    "options": [
+      "A) IndexError",
+      "B) TypeError",
+      "C) index",
+      "D) lookup"
+    ],
+    "correct": "D",
+    "explanation": "IndexError hereda directamente de LookupError. Como LookupError está evaluado primero, intercepta la excepción e impide evaluar el bloque de IndexError."
+  },
+  {
+    "id": "PCEP-6300-089",
+    "module": "exceptions",
+    "topic": "try-except",
+    "subtopic": "Try Else Finally block",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.3",
+    "tags": [
+      "exceptions",
+      "try-except",
+      "finally"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código al finalizar?\n\ntry:\n    x = 1\nexcept:\n    x = 2\nelse:\n    x = 3\nfinally:\n    x = 4\nprint(x)",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "No ocurren excepciones, por lo que se ejecuta la cláusula 'else' (x = 3). Tras ello, se ejecuta obligatoriamente el bloque 'finally' (x = 4)."
+  }
+]

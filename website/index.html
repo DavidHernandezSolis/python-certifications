@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Certification Master - PCEP Prep Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+  <!-- App Container -->
+  <div class="app-layout">
+    
+    <!-- Navbar / Header -->
+    <header class="app-header">
+      <div class="brand">
+        <span class="logo">🐍</span>
+        <div class="brand-text">
+          <h1>Python Certification Master</h1>
+          <p>PCEP Training Portal (2026 Edition)</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <button class="nav-btn active" data-tab="dashboard">Dashboard</button>
+        <button class="nav-btn" data-tab="modules">Módulos</button>
+        <button class="nav-btn" data-tab="cheatsheets">Cheat Sheets</button>
+        <button class="nav-btn" data-tab="flashcards">Flashcards</button>
+        <button class="nav-btn highlight-btn" data-tab="simulator">Simulador</button>
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="app-content">
+      
+      <!-- 1. DASHBOARD VIEW -->
+      <section id="dashboard" class="tab-pane active">
+        <div class="welcome-banner glass">
+          <h2>¡Bienvenido a tu Plataforma de Entrenamiento!</h2>
+          <p>Esta aplicación funciona 100% sin conexión y está diseñada para prepararte para el examen oficial de certificación PCEP-30-02.</p>
+        </div>
+        
+        <div class="dashboard-grid">
+          <!-- Card Progreso Global -->
+          <div class="dashboard-card glass">
+            <h3>Progreso de Estudio</h3>
+            <div class="progress-container">
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="global-progress-bar" style="width: 70%;"></div>
+              </div>
+              <span class="progress-label" id="global-progress-text">70% Completado</span>
+            </div>
+            <p class="card-desc">Completa todos los módulos de estudio y laboratorios prácticos en tu ruta de preparación.</p>
+          </div>
+
+          <!-- Card Learning Path -->
+          <div class="dashboard-card glass">
+            <h3>Rutas de Aprendizaje</h3>
+            <div class="learning-path-selector">
+              <button class="path-btn active" data-path="rapido">Rápida (20h)</button>
+              <button class="path-btn" data-path="completo">Completa (60h)</button>
+              <button class="path-btn" data-path="experto">Experta (120h)</button>
+            </div>
+            <div id="path-desc-content" class="path-desc">
+              <strong>Modo Rápido:</strong> Diseñado para programadores experimentados. Enfócate en cheatsheets, laboratorios y simulador de examen directo.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. MODULES VIEW -->
+      <section id="modules" class="tab-pane">
+        <div class="split-view">
+          <aside class="sidebar-list glass">
+            <h3>Módulos del Syllabus</h3>
+            <ul id="module-menu">
+              <!-- Módulos cargados dinámicamente -->
+            </ul>
+          </aside>
+          <article class="reader-pane glass">
+            <div id="module-reader-content">
+              Selecciona un módulo en el menú de la izquierda para comenzar a estudiar.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. CHEATSHEETS VIEW -->
+      <section id="cheatsheets" class="tab-pane">
+        <div class="split-view">
+          <aside class="sidebar-list glass">
+            <h3>Cheat Sheets Rápidas</h3>
+            <ul id="cheatsheet-menu">
+              <li class="menu-item active" data-cheatsheet="variables">Variables e Identificadores</li>
+              <li class="menu-item" data-cheatsheet="operators">Operadores y Bits</li>
+              <li class="menu-item" data-cheatsheet="loops">Bucles y Control</li>
+            </ul>
+          </aside>
+          <article class="reader-pane glass">
+            <div id="cheatsheet-reader-content">
+              Selecciona una hoja de trucos para repasar la sintaxis clave.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. FLASHCARDS VIEW -->
+      <section id="flashcards" class="tab-pane">
+        <div class="flashcards-container">
+          <div class="flashcard-selector">
+            <button class="fc-topic-btn active" data-fc-topic="variables">Variables</button>
+            <button class="fc-topic-btn" data-fc-topic="loops">Bucles</button>
+          </div>
+          
+          <!-- Flip Card -->
+          <div class="flashcard-deck">
+            <div class="flip-card" id="active-flashcard">
+              <div class="flip-card-inner">
+                <div class="flip-card-front glass">
+                  <h3>Pregunta</h3>
+                  <p id="fc-front-text">¿Puede comenzar una variable con un dígito numérico?</p>
+                  <span class="card-tap-hint">(Haz clic para voltear)</span>
+                </div>
+                <div class="flip-card-back glass">
+                  <h3>Respuesta</h3>
+                  <p id="fc-back-text">No. Iniciar un identificador con un número produce un SyntaxError.</p>
+                  <span class="card-tap-hint">(Haz clic para regresar)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard-controls">
+            <button class="fc-control-btn btn-sec" id="fc-prev-btn">⬅ Anterior</button>
+            <button class="fc-control-btn btn-pri" id="fc-flip-btn">🔄 Voltear</button>
+            <button class="fc-control-btn btn-sec" id="fc-next-btn">Siguiente ➡</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. SIMULATOR VIEW -->
+      <section id="simulator" class="tab-pane">
+        <!-- Simulator Start View -->
+        <div id="sim-start-screen" class="sim-container glass">
+          <h2>Simulador de Examen PCEP</h2>
+          <p>Pon a prueba tus conocimientos en un entorno controlado similar al del examen oficial.</p>
+          
+          <div class="sim-mode-selector">
+            <h3>Selecciona la Dificultad del Simulador:</h3>
+            <button class="sim-mode-btn" data-sim-mode="1">Modo Fácil (Dificultad ⭐ a ⭐⭐)</button>
+            <button class="sim-mode-btn" data-sim-mode="2">Modo Medio (Dificultad ⭐⭐⭐)</button>
+            <button class="sim-mode-btn" data-sim-mode="3">Modo Difícil (Dificultad ⭐⭐⭐⭐ a ⭐⭐⭐⭐⭐)</button>
+            <button class="sim-mode-btn active" data-sim-mode="5">Modo Examen Completo (Preguntas Aleatorias Cronometradas)</button>
+          </div>
+
+          <button class="start-exam-btn" id="start-exam-trigger">Comenzar Simulador 🚀</button>
+        </div>
+
+        <!-- Simulator Active Exam View -->
+        <div id="sim-active-screen" class="sim-container glass hidden">
+          <div class="exam-header">
+            <span class="exam-progress-text" id="exam-progress-indicator">Pregunta 1 de 10</span>
+            <div class="exam-timer" id="exam-timer-indicator">Tiempo: 15:00</div>
+          </div>
+          
+          <div class="exam-body">
+            <h3 id="exam-question-topic">Tema</h3>
+            <p class="exam-question-text" id="exam-question-content">¿Cuál es la función principal de la Máquina Virtual de Python (PVM)?</p>
+            
+            <div class="exam-options-list" id="exam-options-container">
+              <!-- Opciones dinámicas -->
+            </div>
+          </div>
+
+          <div class="exam-footer">
+            <button class="exam-nav-btn btn-sec hidden" id="exam-prev-btn">Atrás</button>
+            <button class="exam-nav-btn btn-pri" id="exam-next-btn">Siguiente Pregunta ➡</button>
+          </div>
+        </div>
+
+        <!-- Simulator Results & Analytics View -->
+        <div id="sim-results-screen" class="sim-container glass hidden">
+          <h2>Resultados de la Evaluación</h2>
+          
+          <div class="results-summary-card">
+            <div class="summary-score" id="results-score-value">8/10</div>
+            <div class="summary-details">
+              <h3 id="results-status-text">APROBADO (PASSED) 🎉</h3>
+              <p>Porcentaje: <span id="results-percent-value">80%</span></p>
+              <p>Tiempo empleado: <span id="results-time-value">120</span> segundos</p>
+            </div>
+          </div>
+
+          <!-- Analytics Container -->
+          <div class="analytics-card">
+            <h3>Rendimiento por Módulo del Syllabus</h3>
+            <div class="analytics-chart-container" id="analytics-chart-box">
+              <!-- Barras de análisis dinámicas -->
+            </div>
+          </div>
+
+          <!-- Recommendations -->
+          <div class="recommendations-box warning-box hidden" id="results-recommendation-box">
+            <h3>⚠️ Recomendación de Repaso</h3>
+            <p>De acuerdo con tus respuestas, te recomendamos repasar los siguientes temas de forma prioritaria:</p>
+            <ul id="results-recommendations-list"></ul>
+          </div>
+
+          <button class="start-exam-btn" id="results-restart-btn">Reiniciar Simulador 🔄</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Script Declarations -->
+  <script src="questions_db.js"></script>
+  <script src="modules_db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

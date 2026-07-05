@@ -1,0 +1,2297 @@
+[
+  {
+    "id": "PCEP-3300-000",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-001",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-002",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-003",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-004",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-005",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4, 2]",
+      "C) [10, 8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-006",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-007",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4, 2]",
+      "C) [6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-008",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-009",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 4, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-010",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-011",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-012",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-013",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) [8, 5]",
+      "C) [8]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(8, 4, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-014",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-015",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-016",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-017",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [10, 7, 4]",
+      "C) [10, 7]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(10, 3, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-018",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-019",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-020",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-021",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [10, 7, 4]",
+      "C) [10, 7]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(10, 3, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-022",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-023",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-024",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-025",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4]",
+      "C) [8, 6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 4, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-026",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-027",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) [10, 7, 4]",
+      "C) [10, 7]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-028",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-029",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-030",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-031",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4]",
+      "C) [8, 6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 4, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-032",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-033",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4, 2]",
+      "C) [10, 8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-034",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 15"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-035",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [10, 7, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-036",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-037",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-038",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-039",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) [8, 5]",
+      "C) [8]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(8, 4, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-040",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-041",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-042",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-043",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [8, 5]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 3, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-044",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-045",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4, 2]",
+      "C) [6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-046",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 15"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-047",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-048",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-049",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-050",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-051",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4, 2]",
+      "C) [6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-052",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-053",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4]",
+      "C) [8, 6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(8, 3, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-054",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-055",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-056",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-057",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [10, 7, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-058",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 15"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-059",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-060",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-061",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) [10, 7, 4]",
+      "C) [10, 7]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-062",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-063",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [8, 5]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 3, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-064",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-065",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 4, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-066",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-067",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-068",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-069",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [10, 7, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-070",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-071",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-072",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-073",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-074",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-075",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-076",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-077",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [10, 7, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-3300-078",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 15"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-079",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 4, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-080",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 15"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-081",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(10, 3, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-082",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-083",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-3300-084",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-085",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) [10, 7, 4]",
+      "C) [10, 7]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-086",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-087",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) [10, 7, 4]",
+      "C) [10, 7]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-3300-088",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-3300-089",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4, 2]",
+      "C) [6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  }
+]

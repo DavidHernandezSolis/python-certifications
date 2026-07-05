@@ -1,0 +1,2277 @@
+[
+  {
+    "id": "PCEP-4001",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Syntax Rules",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "syntax"
+    ],
+    "question": "¿Por qué la llamada func(a=1, 2, 3) produce un SyntaxError?",
+    "options": [
+      "A) Porque no se puede asignar un valor por defecto en la llamada.",
+      "B) Porque los argumentos posicionales no pueden ir después de los argumentos keyword.",
+      "C) Porque faltan parámetros por nombrar obligatoriamente.",
+      "D) Porque Python requiere comas dobles para separar los keyword."
+    ],
+    "correct": "B",
+    "explanation": "En las llamadas a funciones, todos los argumentos posicionales (como 2 y 3) deben ir obligatoriamente antes de cualquier argumento nominal o keyword (como a=1)."
+  },
+  {
+    "id": "PCEP-4300-000",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-001",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-002",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-003",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-004",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-005",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-006",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-007",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-008",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-009",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-010",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-011",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-012",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-013",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-014",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-015",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-016",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-017",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-018",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-019",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-020",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-021",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-022",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-023",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-024",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-025",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-026",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-027",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-028",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-029",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-030",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-031",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-032",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-033",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-034",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-035",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-036",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-037",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-038",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-039",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-040",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-041",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-042",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-043",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-044",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-045",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-046",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-047",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-048",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-049",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-050",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-051",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-052",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-053",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-054",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-055",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-056",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-057",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-058",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-059",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-060",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-061",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-062",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-063",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-064",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-065",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-066",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-067",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-068",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-069",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-070",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-071",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-072",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-073",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-074",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-075",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-076",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-077",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-078",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-079",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-080",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-081",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-082",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 45",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-083",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-084",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 30",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-085",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-086",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "options": [
+      "A) 10",
+      "B) 20",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "A",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-087",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  },
+  {
+    "id": "PCEP-4300-088",
+    "module": "functions",
+    "topic": "Scopes",
+    "subtopic": "Shadowing Variables",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.2",
+    "tags": [
+      "functions",
+      "scopes",
+      "local"
+    ],
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "options": [
+      "A) 15",
+      "B) 5",
+      "C) None",
+      "D) UnboundLocalError"
+    ],
+    "correct": "B",
+    "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
+  },
+  {
+    "id": "PCEP-4300-089",
+    "module": "functions",
+    "topic": "Arguments",
+    "subtopic": "Keyword parameters",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "4.1",
+    "tags": [
+      "functions",
+      "parameters",
+      "invocation"
+    ],
+    "question": "¿Qué valor imprime la ejecución de este código?\n\ndef calc(a, b=2, c=3):\n    return a + b + c\nprint(calc(10, c=5))",
+    "options": [
+      "A) 15",
+      "B) 17",
+      "C) 18",
+      "D) SyntaxError"
+    ],
+    "correct": "B",
+    "explanation": "El argumento posicional 10 se asigna a 'a'. 'b' toma su valor por defecto 2, y 'c' es asignado explícitamente a 5. El total es 10 + 2 + 5 = 17."
+  }
+]

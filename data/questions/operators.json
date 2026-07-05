@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "PCEP-2200-000",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "options": [
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
+    ],
+    "correct": "B",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-001",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-002",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "options": [
+      "A) 0",
+      "B) 99",
+      "C) False",
+      "D) True"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-003",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 2, -7 % 2)",
+    "options": [
+      "A) -3 1",
+      "B) -3.5",
+      "C) -4 0",
+      "D) -4 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-004",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-005",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or [1, 2])",
+    "options": [
+      "A) ''",
+      "B) False",
+      "C) True",
+      "D) [1, 2]"
+    ],
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-2200-006",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 3, -5 % 3)",
+    "options": [
+      "A) -1 1",
+      "B) -1.7",
+      "C) -2 0",
+      "D) -2 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-007",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 81",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-008",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "options": [
+      "A) False",
+      "B) Python",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-009",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "options": [
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-010",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-011",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "options": [
+      "A) False",
+      "B) Python",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-012",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "options": [
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-013",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-014",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or [1, 2])",
+    "options": [
+      "A) False",
+      "B) True",
+      "C) [1, 2]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-2200-015",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
+    "options": [
+      "A) -1 1",
+      "B) -1.5",
+      "C) -2 0",
+      "D) -2 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-016",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-017",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
+    "options": [
+      "A) 99",
+      "B) False",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "A",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-018",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
+    "options": [
+      "A) -2 1",
+      "B) -2.5",
+      "C) -3 0",
+      "D) -3 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-019",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-020",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "options": [
+      "A) 0",
+      "B) 99",
+      "C) False",
+      "D) True"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-021",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 3, -9 % 3)",
+    "options": [
+      "A) -2 0",
+      "B) -3 -1",
+      "C) -3 0",
+      "D) -3.0"
+    ],
+    "correct": "C",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-022",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-023",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 99)",
+    "options": [
+      "A) 99",
+      "B) False",
+      "C) None",
+      "D) True"
+    ],
+    "correct": "A",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-024",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "options": [
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
+    ],
+    "correct": "B",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-025",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 81",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-026",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-027",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
+    "options": [
+      "A) -2 1",
+      "B) -2.5",
+      "C) -3 0",
+      "D) -3 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-028",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-029",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-030",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "options": [
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-031",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-032",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "options": [
+      "A) 0",
+      "B) 99",
+      "C) False",
+      "D) True"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-033",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "options": [
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-034",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-035",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or [1, 2])",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) True",
+      "D) [1, 2]"
+    ],
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-2200-036",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "options": [
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
+    ],
+    "correct": "B",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-037",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-038",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or 99)",
+    "options": [
+      "A) ''",
+      "B) 99",
+      "C) False",
+      "D) True"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-039",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "options": [
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-040",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-041",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-042",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
+    "options": [
+      "A) -1 1",
+      "B) -1.5",
+      "C) -2 0",
+      "D) -2 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-043",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-044",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or [1, 2])",
+    "options": [
+      "A) False",
+      "B) True",
+      "C) [1, 2]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-2200-045",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "options": [
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-046",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-047",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
+    "options": [
+      "A) 0",
+      "B) False",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-048",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "options": [
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-049",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-050",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "options": [
+      "A) False",
+      "B) Python",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-051",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "options": [
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-052",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-053",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-054",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 3, -9 % 3)",
+    "options": [
+      "A) -2 0",
+      "B) -3 -1",
+      "C) -3 0",
+      "D) -3.0"
+    ],
+    "correct": "C",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-055",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-056",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "options": [
+      "A) False",
+      "B) Python",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-057",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
+    "options": [
+      "A) -2 1",
+      "B) -2.5",
+      "C) -3 0",
+      "D) -3 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-058",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-059",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or [1, 2])",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) True",
+      "D) [1, 2]"
+    ],
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-2200-060",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "options": [
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
+    ],
+    "correct": "B",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-061",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-062",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 99)",
+    "options": [
+      "A) 99",
+      "B) False",
+      "C) None",
+      "D) True"
+    ],
+    "correct": "A",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-063",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
+    "options": [
+      "A) -1 1",
+      "B) -1.5",
+      "C) -2 0",
+      "D) -2 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-064",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-065",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "options": [
+      "A) 0",
+      "B) 99",
+      "C) False",
+      "D) True"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-066",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "options": [
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-067",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 81",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-068",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-069",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 2, -7 % 2)",
+    "options": [
+      "A) -3 1",
+      "B) -3.5",
+      "C) -4 0",
+      "D) -4 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-070",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-071",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
+    "options": [
+      "A) 0",
+      "B) False",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-072",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 3, -9 % 3)",
+    "options": [
+      "A) -2 0",
+      "B) -3 -1",
+      "C) -3 0",
+      "D) -3.0"
+    ],
+    "correct": "C",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-073",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-074",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or [1, 2])",
+    "options": [
+      "A) ''",
+      "B) False",
+      "C) True",
+      "D) [1, 2]"
+    ],
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-2200-075",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
+    "options": [
+      "A) -2 1",
+      "B) -2.5",
+      "C) -3 0",
+      "D) -3 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-076",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-077",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or [1, 2])",
+    "options": [
+      "A) False",
+      "B) True",
+      "C) [1, 2]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-2200-078",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "options": [
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-079",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 256",
+      "C) 64",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-080",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
+    "options": [
+      "A) 99",
+      "B) False",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "A",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-081",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 3, -5 % 3)",
+    "options": [
+      "A) -1 1",
+      "B) -1.7",
+      "C) -2 0",
+      "D) -2 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-082",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-2200-083",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "options": [
+      "A) 0",
+      "B) 99",
+      "C) False",
+      "D) True"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  },
+  {
+    "id": "PCEP-2200-084",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "options": [
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-085",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-086",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
+    "options": [
+      "A) 0",
+      "B) False",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-2200-087",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "options": [
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-2200-088",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-2200-089",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
+    "options": [
+      "A) 99",
+      "B) False",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "A",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+  }
+]

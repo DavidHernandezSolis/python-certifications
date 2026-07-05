@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "PCEP-5300-000",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-001",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "options": [
+      "A) Entr",
+      "B) Entry",
+      "C) Et",
+      "D) IndexError"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-002",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-003",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-004",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Por",
+      "C) Progr",
+      "D) Programmer"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-005",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-006",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-007",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:5:2])",
+    "options": [
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntry"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-008",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-009",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-010",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Por",
+      "C) Progr",
+      "D) Programmer"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-011",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-012",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-013",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-014",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-015",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-016",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-017",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-018",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-019",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Python",
+      "C) yh",
+      "D) yth"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-020",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-021",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-022",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "options": [
+      "A) Entr",
+      "B) Entry",
+      "C) Et",
+      "D) IndexError"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-023",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-024",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-025",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-026",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-027",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-028",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-029",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-030",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-031",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-032",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-033",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-034",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-035",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-036",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-037",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-038",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-039",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-040",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Por",
+      "C) Progr",
+      "D) Programmer"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-041",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-042",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-043",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Por",
+      "C) Progr",
+      "D) Programmer"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-044",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-045",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-046",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Python",
+      "C) yh",
+      "D) ytho"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-047",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-048",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-049",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Python",
+      "C) yh",
+      "D) yth"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-050",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-051",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-052",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "options": [
+      "A) IndexError",
+      "B) Por",
+      "C) Progr",
+      "D) Programmer"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-053",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-054",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-055",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:5:2])",
+    "options": [
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntry"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-056",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-057",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-058",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "options": [
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-059",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-060",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-061",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-062",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-063",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-064",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Pt",
+      "C) Pyth",
+      "D) Python"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-065",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-066",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-067",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
+    ],
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-068",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-069",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-070",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "options": [
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-071",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-072",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-073",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "options": [
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-074",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-075",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-076",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Python",
+      "C) yh",
+      "D) yth"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-077",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-078",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-079",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-080",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-081",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-082",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "options": [
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-083",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-084",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [20, 30]",
+      "C) [99, 30]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-085",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "options": [
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-086",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  },
+  {
+    "id": "PCEP-5300-087",
+    "module": "collections",
+    "topic": "Lists",
+    "subtopic": "References Assignment",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "lists",
+      "mutability",
+      "references"
+    ],
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "options": [
+      "A) TypeError",
+      "B) [10, 40]",
+      "C) [99, 40]",
+      "D) [99, 99]"
+    ],
+    "correct": "C",
+    "explanation": "Asignar l2 = l1 copia la dirección de memoria. Ambos nombres apuntan al mismo objeto en memoria, por lo que las modificaciones sobre l2 afectan a l1."
+  },
+  {
+    "id": "PCEP-5300-088",
+    "module": "collections",
+    "topic": "Slicing",
+    "subtopic": "Slicing Step",
+    "difficulty": 3,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "3.1",
+    "tags": [
+      "slicing",
+      "sequences",
+      "strings"
+    ],
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "options": [
+      "A) Entr",
+      "B) Entry",
+      "C) Et",
+      "D) IndexError"
+    ],
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+  },
+  {
+    "id": "PCEP-5300-089",
+    "module": "collections",
+    "topic": "Tuples",
+    "subtopic": "Immutability Assign",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Understand",
+    "pattern": "Error Finding",
+    "official_objective": "3.1",
+    "tags": [
+      "tuples",
+      "immutability",
+      "errors"
+    ],
+    "question": "¿Qué ocurre al intentar reasignar un elemento de una tupla?\n\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+    "options": [
+      "A) (99, 2, 3)",
+      "B) SyntaxError",
+      "C) TypeError",
+      "D) ValueError"
+    ],
+    "correct": "C",
+    "explanation": "Las tuplas son colecciones inmutables en Python. Cualquier asignación por índice sobre una tupla existente lanza un 'TypeError'."
+  }
+]
