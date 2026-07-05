@@ -14,11 +14,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -39,15 +39,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:5:2])",
     "options": [
-      "A) Entr",
-      "B) Entry",
-      "C) Et",
-      "D) IndexError"
+      "A) Entry",
+      "B) Ety",
+      "C) IndexError",
+      "D) None"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-002",
@@ -89,11 +89,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -114,15 +114,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Python",
+      "C) yh",
+      "D) ytho"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-005",
@@ -164,11 +164,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -189,15 +189,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntry"
+      "A) Entr",
+      "B) Entry",
+      "C) Et",
+      "D) IndexError"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-008",
@@ -239,11 +239,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -314,11 +314,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -339,15 +339,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
     "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-014",
@@ -414,15 +414,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-017",
@@ -464,11 +464,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -489,15 +489,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Python",
-      "C) yh",
-      "D) yth"
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-020",
@@ -539,10 +539,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
+      "B) [20, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -564,15 +564,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
-      "A) Entr",
-      "B) Entry",
-      "C) Et",
-      "D) IndexError"
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-023",
@@ -614,11 +614,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -639,15 +639,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
     "options": [
-      "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "A) Entr",
+      "B) Entry",
+      "C) Et",
+      "D) IndexError"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-026",
@@ -714,15 +714,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-029",
@@ -764,11 +764,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -789,15 +789,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
     "options": [
-      "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-032",
@@ -839,11 +839,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -864,15 +864,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Por",
+      "C) Progr",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-035",
@@ -914,10 +914,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
+      "B) [20, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -939,12 +939,12 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:5:2])",
     "options": [
-      "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "A) Entry",
+      "B) Ety",
+      "C) IndexError",
+      "D) None"
     ],
     "correct": "B",
     "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
@@ -989,10 +989,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -1014,15 +1014,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Python",
+      "C) yh",
+      "D) yth"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-041",
@@ -1064,10 +1064,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -1089,15 +1089,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-044",
@@ -1139,10 +1139,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
+      "B) [10, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -1164,12 +1164,12 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:5:2])",
     "options": [
-      "A) IndexError",
-      "B) Python",
-      "C) yh",
-      "D) ytho"
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntry"
     ],
     "correct": "C",
     "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
@@ -1239,15 +1239,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
     "options": [
       "A) IndexError",
-      "B) Python",
-      "C) yh",
-      "D) yth"
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-050",
@@ -1314,15 +1314,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-053",
@@ -1364,10 +1364,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -1439,11 +1439,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -1464,15 +1464,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-059",
@@ -1514,11 +1514,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -1539,15 +1539,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-062",
@@ -1589,10 +1589,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
+      "B) [10, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -1614,15 +1614,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:5:2])",
     "options": [
-      "A) IndexError",
-      "B) Pt",
-      "C) Pyth",
-      "D) Python"
+      "A) Entry",
+      "B) Ety",
+      "C) IndexError",
+      "D) None"
     ],
     "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-065",
@@ -1664,11 +1664,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
-      "C) [99, 30]",
+      "B) [20, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -1689,15 +1689,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
     "options": [
-      "A) IndexError",
-      "B) Po",
-      "C) Prog",
-      "D) Programmer"
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-068",
@@ -1739,11 +1739,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -1764,15 +1764,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-071",
@@ -1839,15 +1839,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-074",
@@ -1889,11 +1889,11 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -1914,15 +1914,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
     "options": [
       "A) IndexError",
       "B) Python",
       "C) yh",
-      "D) yth"
+      "D) ytho"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-077",
@@ -1964,10 +1964,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -2114,10 +2114,10 @@
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
+      "B) [10, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -2139,15 +2139,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Python",
+      "C) yh",
+      "D) ytho"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-086",
@@ -2214,15 +2214,15 @@
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
     "options": [
-      "A) Entr",
-      "B) Entry",
-      "C) Et",
-      "D) IndexError"
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-5300-089",

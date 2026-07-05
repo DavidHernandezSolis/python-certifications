@@ -157,14 +157,30 @@ function renderModuleContent(key) {
 
 // 3. CHEATSHEETS VIEW CONTROLLER
 function loadCheatsheetsView() {
-  document.querySelectorAll("#cheatsheet-menu .menu-item").forEach(item => {
-    // Re-attach click listeners
-    item.onclick = () => {
-      document.querySelectorAll("#cheatsheet-menu .menu-item").forEach(i => i.classList.remove("active"));
-      item.classList.add("active");
-      const key = item.getAttribute("data-cheatsheet");
-      renderCheatsheetContent(key);
-    };
+  const menu = document.getElementById("cheatsheet-menu");
+  menu.innerHTML = "";
+
+  const cheatsheetsMeta = [
+    { key: "variables", label: "Variables e Identificadores" },
+    { key: "operators", label: "Operadores y Bits" },
+    { key: "types", label: "Tipos de Datos" },
+    { key: "loops", label: "Bucles y Control" },
+    { key: "collections", label: "Colecciones" },
+    { key: "exceptions", label: "Excepciones" },
+    { key: "functions", label: "Funciones y Scopes" },
+    { key: "io_and_casting", label: "Entrada/Salida y Casting" }
+  ];
+
+  cheatsheetsMeta.forEach((cs, idx) => {
+    const li = document.createElement("li");
+    li.className = "menu-item" + (idx === 0 ? " active" : "");
+    li.textContent = cs.label;
+    li.addEventListener("click", () => {
+      document.querySelectorAll("#cheatsheet-menu .menu-item").forEach(item => item.classList.remove("active"));
+      li.classList.add("active");
+      renderCheatsheetContent(cs.key);
+    });
+    menu.appendChild(li);
   });
 
   // Load first cheatsheet

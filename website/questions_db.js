@@ -89,15 +89,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x10)",
     "options": [
-      "A) 0b10000x8",
-      "B) 14",
-      "C) 16",
-      "D) 18"
+      "A) 0b110x10",
+      "B) 17",
+      "C) 19",
+      "D) 21"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0x8 equivale a 8 decimal. 8 + 8 = 16."
+    "explanation": "0b11 equivale a 3 decimal. 0x10 equivale a 16 decimal. 3 + 16 = 19."
   },
   {
     "id": "PCEP-0005",
@@ -114,15 +114,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='$')\nprint('Z')",
     "options": [
       "A) X Y Z",
       "B) X#Y\nZ",
-      "C) X#Y Z",
-      "D) XY Z"
+      "C) X#Y$Z",
+      "D) XY$Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0006",
@@ -139,11 +139,11 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.0))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.8))",
     "options": [
       "A) -4",
       "B) -5",
-      "C) -5.0",
+      "C) -5.8",
       "D) -6"
     ],
     "correct": "B",
@@ -164,15 +164,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0xc)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x10)",
     "options": [
-      "A) 0b10000xc",
-      "B) 18",
-      "C) 20",
-      "D) 22"
+      "A) 0b10100x10",
+      "B) 24",
+      "C) 26",
+      "D) 28"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0xc equivale a 12 decimal. 8 + 12 = 20."
+    "explanation": "0b1010 equivale a 10 decimal. 0x10 equivale a 16 decimal. 10 + 16 = 26."
   },
   {
     "id": "PCEP-0008",
@@ -189,15 +189,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "B) XY Z",
+      "C) X_Y\nZ",
+      "D) X_Y Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0009",
@@ -214,11 +214,11 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.3))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.6))",
     "options": [
       "A) -1",
       "B) -2",
-      "C) -2.3",
+      "C) -2.6",
       "D) -3"
     ],
     "correct": "B",
@@ -239,15 +239,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x8)",
     "options": [
-      "A) 0b10000x8",
-      "B) 14",
-      "C) 16",
-      "D) 18"
+      "A) 0b10100x8",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0x8 equivale a 8 decimal. 8 + 8 = 16."
+    "explanation": "0b1010 equivale a 10 decimal. 0x8 equivale a 8 decimal. 10 + 8 = 18."
   },
   {
     "id": "PCEP-0011",
@@ -289,15 +289,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.7))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.8))",
     "options": [
       "A) -1",
-      "B) -1.7",
-      "C) -2",
-      "D) 0"
+      "B) -2",
+      "C) -2.8",
+      "D) -3"
     ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
   },
   {
     "id": "PCEP-0013",
@@ -314,318 +314,18 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x4)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x8)",
     "options": [
-      "A) 0b10100x4",
-      "B) 12",
-      "C) 14",
-      "D) 16"
+      "A) 0b10000x8",
+      "B) 14",
+      "C) 16",
+      "D) 18"
     ],
     "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0x4 equivale a 4 decimal. 10 + 4 = 14."
+    "explanation": "0b1000 equivale a 8 decimal. 0x8 equivale a 8 decimal. 8 + 8 = 16."
   },
   {
     "id": "PCEP-0014",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0015",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.2))",
-    "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.2",
-      "D) -4"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
-  },
-  {
-    "id": "PCEP-0016",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0xa)",
-    "options": [
-      "A) 0b100xa",
-      "B) 10",
-      "C) 12",
-      "D) 14"
-    ],
-    "correct": "C",
-    "explanation": "0b10 equivale a 2 decimal. 0xa equivale a 10 decimal. 2 + 10 = 12."
-  },
-  {
-    "id": "PCEP-0017",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='@')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y@Z",
-      "D) XY@Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0018",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.7))",
-    "options": [
-      "A) -5",
-      "B) -6",
-      "C) -6.7",
-      "D) -7"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
-  },
-  {
-    "id": "PCEP-0019",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x10)",
-    "options": [
-      "A) 0b1010x10",
-      "B) 19",
-      "C) 21",
-      "D) 23"
-    ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x10 equivale a 16 decimal. 5 + 16 = 21."
-  },
-  {
-    "id": "PCEP-0020",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y Z",
-      "D) XY Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0021",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.8))",
-    "options": [
-      "A) -1",
-      "B) -1.8",
-      "C) -2",
-      "D) 0"
-    ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
-  },
-  {
-    "id": "PCEP-0022",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x10)",
-    "options": [
-      "A) 0b10100x10",
-      "B) 24",
-      "C) 26",
-      "D) 28"
-    ],
-    "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0x10 equivale a 16 decimal. 10 + 16 = 26."
-  },
-  {
-    "id": "PCEP-0023",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end=' ')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X#Y\nZ",
-      "C) X#Y Z",
-      "D) XY Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0024",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.8))",
-    "options": [
-      "A) -1",
-      "B) -2",
-      "C) -2.8",
-      "D) -3"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
-  },
-  {
-    "id": "PCEP-0025",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xa)",
-    "options": [
-      "A) 0b1010xa",
-      "B) 13",
-      "C) 15",
-      "D) 17"
-    ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0xa equivale a 10 decimal. 5 + 10 = 15."
-  },
-  {
-    "id": "PCEP-0026",
     "module": "fundamentals",
     "topic": "Basic IO",
     "subtopic": "Print Separators",
@@ -650,7 +350,7 @@ const PCEP_QUESTIONS = [
     "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
-    "id": "PCEP-0027",
+    "id": "PCEP-0015",
     "module": "fundamentals",
     "topic": "Casting",
     "subtopic": "Type Conversion",
@@ -664,93 +364,18 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.0))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.6))",
     "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.0",
-      "D) -5"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
-  },
-  {
-    "id": "PCEP-0028",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x8)",
-    "options": [
-      "A) 0b1100x8",
-      "B) 12",
-      "C) 14",
-      "D) 16"
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.6"
     ],
     "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0x8 equivale a 8 decimal. 6 + 8 = 14."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
-    "id": "PCEP-0029",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='@')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X#Y\nZ",
-      "C) X#Y@Z",
-      "D) XY@Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0030",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.2))",
-    "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.2",
-      "D) -4"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
-  },
-  {
-    "id": "PCEP-0031",
+    "id": "PCEP-0016",
     "module": "fundamentals",
     "topic": "Literals",
     "subtopic": "Numeric Bases",
@@ -775,7 +400,232 @@ const PCEP_QUESTIONS = [
     "explanation": "0b11 equivale a 3 decimal. 0xa equivale a 10 decimal. 3 + 10 = 13."
   },
   {
-    "id": "PCEP-0032",
+    "id": "PCEP-0017",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='@')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X#Y\nZ",
+      "C) X#Y@Z",
+      "D) XY@Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0018",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.2))",
+    "options": [
+      "A) -1",
+      "B) -2",
+      "C) -2.2",
+      "D) -3"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
+  },
+  {
+    "id": "PCEP-0019",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xc)",
+    "options": [
+      "A) 0b1010xc",
+      "B) 15",
+      "C) 17",
+      "D) 19"
+    ],
+    "correct": "C",
+    "explanation": "0b101 equivale a 5 decimal. 0xc equivale a 12 decimal. 5 + 12 = 17."
+  },
+  {
+    "id": "PCEP-0020",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='@')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y@Z",
+      "D) XY@Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0021",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.4))",
+    "options": [
+      "A) -1",
+      "B) -2",
+      "C) -2.4",
+      "D) -3"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
+  },
+  {
+    "id": "PCEP-0022",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x10)",
+    "options": [
+      "A) 0b10000x10",
+      "B) 22",
+      "C) 24",
+      "D) 26"
+    ],
+    "correct": "C",
+    "explanation": "0b1000 equivale a 8 decimal. 0x10 equivale a 16 decimal. 8 + 16 = 24."
+  },
+  {
+    "id": "PCEP-0023",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='!')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y!Z",
+      "D) XY!Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0024",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.7))",
+    "options": [
+      "A) -6",
+      "B) -7",
+      "C) -7.7",
+      "D) -8"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
+  },
+  {
+    "id": "PCEP-0025",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x4)",
+    "options": [
+      "A) 0b1010x4",
+      "B) 11",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": "D",
+    "explanation": "0b101 equivale a 5 decimal. 0x4 equivale a 4 decimal. 5 + 4 = 9."
+  },
+  {
+    "id": "PCEP-0026",
     "module": "fundamentals",
     "topic": "Basic IO",
     "subtopic": "Print Separators",
@@ -800,6 +650,156 @@ const PCEP_QUESTIONS = [
     "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
   },
   {
+    "id": "PCEP-0027",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.4))",
+    "options": [
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.4"
+    ],
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
+  },
+  {
+    "id": "PCEP-0028",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x4)",
+    "options": [
+      "A) 0b1010x4",
+      "B) 11",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": "D",
+    "explanation": "0b101 equivale a 5 decimal. 0x4 equivale a 4 decimal. 5 + 4 = 9."
+  },
+  {
+    "id": "PCEP-0029",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
+    "options": [
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY@Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0030",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.4))",
+    "options": [
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.4"
+    ],
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
+  },
+  {
+    "id": "PCEP-0031",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
+    "options": [
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
+  },
+  {
+    "id": "PCEP-0032",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
+    "options": [
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY$Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+  },
+  {
     "id": "PCEP-0033",
     "module": "fundamentals",
     "topic": "Casting",
@@ -814,15 +814,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.9))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.5))",
     "options": [
-      "A) -1",
-      "B) -1.9",
-      "C) -2",
-      "D) 0"
+      "A) -4",
+      "B) -5",
+      "C) -5.5",
+      "D) -6"
     ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
   },
   {
     "id": "PCEP-0034",
@@ -839,15 +839,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x10)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xa)",
     "options": [
-      "A) 0b110x10",
-      "B) 17",
-      "C) 19",
-      "D) 21"
+      "A) 0b1010xa",
+      "B) 13",
+      "C) 15",
+      "D) 17"
     ],
     "correct": "C",
-    "explanation": "0b11 equivale a 3 decimal. 0x10 equivale a 16 decimal. 3 + 16 = 19."
+    "explanation": "0b101 equivale a 5 decimal. 0xa equivale a 10 decimal. 5 + 10 = 15."
   },
   {
     "id": "PCEP-0035",
@@ -864,15 +864,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='@')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='$')\nprint('Z')",
     "options": [
       "A) X Y Z",
       "B) X*Y\nZ",
-      "C) X*Y@Z",
-      "D) XY@Z"
+      "C) X*Y$Z",
+      "D) XY$Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0036",
@@ -889,15 +889,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.5))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.7))",
     "options": [
-      "A) -7",
-      "B) -8",
-      "C) -8.5",
-      "D) -9"
+      "A) -1",
+      "B) -1.7",
+      "C) -2",
+      "D) 0"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "correct": "A",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
   },
   {
     "id": "PCEP-0037",
@@ -914,15 +914,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0xa)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
     "options": [
-      "A) 0b10100xa",
-      "B) 18",
-      "C) 20",
-      "D) 22"
+      "A) 0b1010x8",
+      "B) 11",
+      "C) 13",
+      "D) 15"
     ],
     "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0xa equivale a 10 decimal. 10 + 10 = 20."
+    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
   },
   {
     "id": "PCEP-0038",
@@ -939,15 +939,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='!')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y Z",
-      "D) XY Z"
+      "B) X#Y\nZ",
+      "C) X#Y!Z",
+      "D) XY!Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0039",
@@ -964,15 +964,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.7))",
     "options": [
-      "A) -7",
+      "A) -10",
       "B) -8",
-      "C) -8.8",
-      "D) -9"
+      "C) -9",
+      "D) -9.7"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
     "id": "PCEP-0040",
@@ -1014,15 +1014,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='!')\nprint('Z')",
     "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY Z"
+      "A) X Y Z",
+      "B) X#Y\nZ",
+      "C) X#Y!Z",
+      "D) XY!Z"
     ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0042",
@@ -1039,15 +1039,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.4))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.0))",
     "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.4",
-      "D) -4"
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.0"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
     "id": "PCEP-0043",
@@ -1064,15 +1064,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xc)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0xa)",
     "options": [
-      "A) 0b1010xc",
-      "B) 15",
-      "C) 17",
-      "D) 19"
+      "A) 0b100xa",
+      "B) 10",
+      "C) 12",
+      "D) 14"
     ],
     "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0xc equivale a 12 decimal. 5 + 12 = 17."
+    "explanation": "0b10 equivale a 2 decimal. 0xa equivale a 10 decimal. 2 + 10 = 12."
   },
   {
     "id": "PCEP-0044",
@@ -1089,15 +1089,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end='!')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y$Z",
-      "D) XY$Z"
+      "B) XY!Z",
+      "C) X_Y\nZ",
+      "D) X_Y!Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0045",
@@ -1114,318 +1114,18 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.4))",
     "options": [
-      "A) -7",
-      "B) -8",
-      "C) -8.8",
-      "D) -9"
+      "A) -1",
+      "B) -2",
+      "C) -2.4",
+      "D) -3"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
   },
   {
     "id": "PCEP-0046",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x10)",
-    "options": [
-      "A) 0b1010x10",
-      "B) 19",
-      "C) 21",
-      "D) 23"
-    ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x10 equivale a 16 decimal. 5 + 16 = 21."
-  },
-  {
-    "id": "PCEP-0047",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='@')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y@Z",
-      "D) XY@Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0048",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.2))",
-    "options": [
-      "A) -4",
-      "B) -5",
-      "C) -5.2",
-      "D) -6"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
-  },
-  {
-    "id": "PCEP-0049",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0xc)",
-    "options": [
-      "A) 0b110xc",
-      "B) 13",
-      "C) 15",
-      "D) 17"
-    ],
-    "correct": "C",
-    "explanation": "0b11 equivale a 3 decimal. 0xc equivale a 12 decimal. 3 + 12 = 15."
-  },
-  {
-    "id": "PCEP-0050",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end=' ')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0051",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.9))",
-    "options": [
-      "A) -10",
-      "B) -8",
-      "C) -9",
-      "D) -9.9"
-    ],
-    "correct": "C",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
-  },
-  {
-    "id": "PCEP-0052",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0xc)",
-    "options": [
-      "A) 0b10100xc",
-      "B) 20",
-      "C) 22",
-      "D) 24"
-    ],
-    "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0xc equivale a 12 decimal. 10 + 12 = 22."
-  },
-  {
-    "id": "PCEP-0053",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY$Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0054",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.6))",
-    "options": [
-      "A) -6",
-      "B) -7",
-      "C) -7.6",
-      "D) -8"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
-  },
-  {
-    "id": "PCEP-0055",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0xa)",
-    "options": [
-      "A) 0b110xa",
-      "B) 11",
-      "C) 13",
-      "D) 15"
-    ],
-    "correct": "C",
-    "explanation": "0b11 equivale a 3 decimal. 0xa equivale a 10 decimal. 3 + 10 = 13."
-  },
-  {
-    "id": "PCEP-0056",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY$Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0057",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.7))",
-    "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.7",
-      "D) -5"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
-  },
-  {
-    "id": "PCEP-0058",
     "module": "fundamentals",
     "topic": "Literals",
     "subtopic": "Numeric Bases",
@@ -1448,6 +1148,306 @@ const PCEP_QUESTIONS = [
     ],
     "correct": "C",
     "explanation": "0b1010 equivale a 10 decimal. 0x8 equivale a 8 decimal. 10 + 8 = 18."
+  },
+  {
+    "id": "PCEP-0047",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) XY Z",
+      "C) X_Y\nZ",
+      "D) X_Y Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0048",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.2))",
+    "options": [
+      "A) -2",
+      "B) -3",
+      "C) -3.2",
+      "D) -4"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
+  },
+  {
+    "id": "PCEP-0049",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
+    "options": [
+      "A) 0b1010x8",
+      "B) 11",
+      "C) 13",
+      "D) 15"
+    ],
+    "correct": "C",
+    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
+  },
+  {
+    "id": "PCEP-0050",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X*Y\nZ",
+      "C) X*Y Z",
+      "D) XY Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0051",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.6))",
+    "options": [
+      "A) -5",
+      "B) -6",
+      "C) -6.6",
+      "D) -7"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
+  },
+  {
+    "id": "PCEP-0052",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x4)",
+    "options": [
+      "A) 0b1100x4",
+      "B) 10",
+      "C) 12",
+      "D) 8"
+    ],
+    "correct": "B",
+    "explanation": "0b110 equivale a 6 decimal. 0x4 equivale a 4 decimal. 6 + 4 = 10."
+  },
+  {
+    "id": "PCEP-0053",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end='$')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) XY$Z",
+      "C) X_Y\nZ",
+      "D) X_Y$Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0054",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.2))",
+    "options": [
+      "A) -3",
+      "B) -4",
+      "C) -4.2",
+      "D) -5"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+  },
+  {
+    "id": "PCEP-0055",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0xa)",
+    "options": [
+      "A) 0b100xa",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "C",
+    "explanation": "0b10 equivale a 2 decimal. 0xa equivale a 10 decimal. 2 + 10 = 12."
+  },
+  {
+    "id": "PCEP-0056",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
+    "options": [
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY@Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0057",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.4))",
+    "options": [
+      "A) -3",
+      "B) -4",
+      "C) -4.4",
+      "D) -5"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+  },
+  {
+    "id": "PCEP-0058",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
+    "options": [
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
   },
   {
     "id": "PCEP-0059",
@@ -1489,15 +1489,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.5))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.2))",
     "options": [
-      "A) -7",
-      "B) -8",
-      "C) -8.5",
-      "D) -9"
+      "A) -6",
+      "B) -7",
+      "C) -7.2",
+      "D) -8"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
   },
   {
     "id": "PCEP-0061",
@@ -1514,15 +1514,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
     "options": [
-      "A) 0b110x8",
-      "B) 11",
-      "C) 13",
-      "D) 9"
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
-    "correct": "B",
-    "explanation": "0b11 equivale a 3 decimal. 0x8 equivale a 8 decimal. 3 + 8 = 11."
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
   },
   {
     "id": "PCEP-0062",
@@ -1564,15 +1564,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.9))",
     "options": [
-      "A) -6",
-      "B) -7",
-      "C) -7.8",
-      "D) -8"
+      "A) -3",
+      "B) -4",
+      "C) -4.9",
+      "D) -5"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
   },
   {
     "id": "PCEP-0064",
@@ -1589,15 +1589,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x10)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x4)",
     "options": [
-      "A) 0b10000x10",
-      "B) 22",
-      "C) 24",
-      "D) 26"
+      "A) 0b110x4",
+      "B) 5",
+      "C) 7",
+      "D) 9"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0x10 equivale a 16 decimal. 8 + 16 = 24."
+    "explanation": "0b11 equivale a 3 decimal. 0x4 equivale a 4 decimal. 3 + 4 = 7."
   },
   {
     "id": "PCEP-0065",
@@ -1614,15 +1614,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
       "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "C) X-Y Z",
+      "D) XY Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0066",
@@ -1639,15 +1639,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.4))",
     "options": [
-      "A) -6",
-      "B) -7",
-      "C) -7.8",
-      "D) -8"
+      "A) -5",
+      "B) -6",
+      "C) -6.4",
+      "D) -7"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
   },
   {
     "id": "PCEP-0067",
@@ -1664,15 +1664,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0xc)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x10)",
     "options": [
-      "A) 0b10000xc",
-      "B) 18",
-      "C) 20",
-      "D) 22"
+      "A) 0b10100x10",
+      "B) 24",
+      "C) 26",
+      "D) 28"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0xc equivale a 12 decimal. 8 + 12 = 20."
+    "explanation": "0b1010 equivale a 10 decimal. 0x10 equivale a 16 decimal. 10 + 16 = 26."
   },
   {
     "id": "PCEP-0068",
@@ -1689,15 +1689,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) XY Z",
-      "C) X_Y\nZ",
-      "D) X_Y Z"
+      "B) X-Y\nZ",
+      "C) X-Y Z",
+      "D) XY Z"
     ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0069",
@@ -1714,243 +1714,18 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.3))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.4))",
     "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.3",
-      "D) -5"
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.4"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
     "id": "PCEP-0070",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x10)",
-    "options": [
-      "A) 0b1100x10",
-      "B) 20",
-      "C) 22",
-      "D) 24"
-    ],
-    "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0x10 equivale a 16 decimal. 6 + 16 = 22."
-  },
-  {
-    "id": "PCEP-0071",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) XY Z",
-      "C) X_Y\nZ",
-      "D) X_Y Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0072",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.9))",
-    "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.9",
-      "D) -4"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
-  },
-  {
-    "id": "PCEP-0073",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
-    "options": [
-      "A) 0b1100xc",
-      "B) 16",
-      "C) 18",
-      "D) 20"
-    ],
-    "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
-  },
-  {
-    "id": "PCEP-0074",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='!')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y!Z",
-      "D) XY!Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0075",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.3))",
-    "options": [
-      "A) -1",
-      "B) -2",
-      "C) -2.3",
-      "D) -3"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
-  },
-  {
-    "id": "PCEP-0076",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0xa)",
-    "options": [
-      "A) 0b10100xa",
-      "B) 18",
-      "C) 20",
-      "D) 22"
-    ],
-    "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0xa equivale a 10 decimal. 10 + 10 = 20."
-  },
-  {
-    "id": "PCEP-0077",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY@Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-0078",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.7))",
-    "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.7",
-      "D) -5"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
-  },
-  {
-    "id": "PCEP-0079",
     "module": "fundamentals",
     "topic": "Literals",
     "subtopic": "Numeric Bases",
@@ -1975,6 +1750,231 @@ const PCEP_QUESTIONS = [
     "explanation": "0b101 equivale a 5 decimal. 0xa equivale a 10 decimal. 5 + 10 = 15."
   },
   {
+    "id": "PCEP-0071",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='@')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y@Z",
+      "D) XY@Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0072",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.2))",
+    "options": [
+      "A) -7",
+      "B) -8",
+      "C) -8.2",
+      "D) -9"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+  },
+  {
+    "id": "PCEP-0073",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x8)",
+    "options": [
+      "A) 0b1100x8",
+      "B) 12",
+      "C) 14",
+      "D) 16"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0x8 equivale a 8 decimal. 6 + 8 = 14."
+  },
+  {
+    "id": "PCEP-0074",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X#Y\nZ",
+      "C) X#Y Z",
+      "D) XY Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0075",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.6))",
+    "options": [
+      "A) -5",
+      "B) -6",
+      "C) -6.6",
+      "D) -7"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
+  },
+  {
+    "id": "PCEP-0076",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
+    "options": [
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
+  },
+  {
+    "id": "PCEP-0077",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y Z",
+      "D) XY Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-0078",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.5))",
+    "options": [
+      "A) -3",
+      "B) -4",
+      "C) -4.5",
+      "D) -5"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+  },
+  {
+    "id": "PCEP-0079",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x4)",
+    "options": [
+      "A) 0b110x4",
+      "B) 5",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": "C",
+    "explanation": "0b11 equivale a 3 decimal. 0x4 equivale a 4 decimal. 3 + 4 = 7."
+  },
+  {
     "id": "PCEP-0080",
     "module": "fundamentals",
     "topic": "Basic IO",
@@ -1989,15 +1989,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end='@')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "B) XY@Z",
+      "C) X_Y\nZ",
+      "D) X_Y@Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0081",
@@ -2014,15 +2014,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.7))",
     "options": [
-      "A) -4",
-      "B) -5",
-      "C) -5.8",
-      "D) -6"
+      "A) -7",
+      "B) -8",
+      "C) -8.7",
+      "D) -9"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
   },
   {
     "id": "PCEP-0082",
@@ -2039,15 +2039,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xa)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
     "options": [
-      "A) 0b1100xa",
-      "B) 14",
-      "C) 16",
-      "D) 18"
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
     "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0xa equivale a 10 decimal. 6 + 10 = 16."
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
   },
   {
     "id": "PCEP-0083",
@@ -2064,15 +2064,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
     "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY@Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0084",
@@ -2089,15 +2089,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.6))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.4))",
     "options": [
       "A) -1",
-      "B) -1.6",
-      "C) -2",
-      "D) 0"
+      "B) -2",
+      "C) -2.4",
+      "D) -3"
     ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
   },
   {
     "id": "PCEP-0085",
@@ -2114,15 +2114,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0x8)",
     "options": [
-      "A) 0b1010x8",
-      "B) 11",
-      "C) 13",
-      "D) 15"
+      "A) 0b100x8",
+      "B) 10",
+      "C) 12",
+      "D) 8"
     ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
+    "correct": "B",
+    "explanation": "0b10 equivale a 2 decimal. 0x8 equivale a 8 decimal. 2 + 8 = 10."
   },
   {
     "id": "PCEP-0086",
@@ -2139,15 +2139,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='!')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
     "options": [
-      "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y!Z",
-      "D) XY!Z"
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY$Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0087",
@@ -2164,15 +2164,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.7))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.1))",
     "options": [
-      "A) -5",
-      "B) -6",
-      "C) -6.7",
-      "D) -7"
+      "A) -4",
+      "B) -5",
+      "C) -5.1",
+      "D) -6"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
   },
   {
     "id": "PCEP-0088",
@@ -2189,15 +2189,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x8)",
     "options": [
-      "A) 0b1010x8",
-      "B) 11",
-      "C) 13",
-      "D) 15"
+      "A) 0b10100x8",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
     "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
+    "explanation": "0b1010 equivale a 10 decimal. 0x8 equivale a 8 decimal. 10 + 8 = 18."
   },
   {
     "id": "PCEP-0089",
@@ -2239,15 +2239,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.5))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.6))",
     "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.5",
-      "D) -4"
+      "A) -1",
+      "B) -1.6",
+      "C) -2",
+      "D) 0"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
+    "correct": "A",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
   },
   {
     "id": "PCEP-0091",
@@ -2264,15 +2264,15 @@ const PCEP_QUESTIONS = [
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x4)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x10)",
     "options": [
-      "A) 0b10100x4",
-      "B) 12",
-      "C) 14",
-      "D) 16"
+      "A) 0b10000x10",
+      "B) 22",
+      "C) 24",
+      "D) 26"
     ],
     "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0x4 equivale a 4 decimal. 10 + 4 = 14."
+    "explanation": "0b1000 equivale a 8 decimal. 0x10 equivale a 16 decimal. 8 + 16 = 24."
   },
   {
     "id": "PCEP-0092",
@@ -2289,15 +2289,15 @@ const PCEP_QUESTIONS = [
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y$Z",
-      "D) XY$Z"
+      "B) X-Y\nZ",
+      "C) X-Y Z",
+      "D) XY Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-0093",
@@ -2314,15 +2314,15 @@ const PCEP_QUESTIONS = [
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.0))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.9))",
     "options": [
-      "A) -4",
-      "B) -5",
-      "C) -5.0",
-      "D) -6"
+      "A) -6",
+      "B) -7",
+      "C) -7.9",
+      "D) -8"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
   },
   {
     "id": "PCEP-0094",
@@ -2339,14 +2339,14 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
     "options": [
-      "A) -1 -1",
-      "B) -1 0",
-      "C) -1.0",
-      "D) 0 0"
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
     ],
-    "correct": "B",
+    "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
@@ -2389,15 +2389,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or [1, 2])",
     "options": [
-      "A) 0",
-      "B) 99",
-      "C) False",
-      "D) True"
+      "A) False",
+      "B) None",
+      "C) True",
+      "D) [1, 2]"
     ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
   },
   {
     "id": "PCEP-0097",
@@ -2414,85 +2414,10 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 2, -7 % 2)",
-    "options": [
-      "A) -3 1",
-      "B) -3.5",
-      "C) -4 0",
-      "D) -4 1"
-    ],
-    "correct": "D",
-    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
-  },
-  {
-    "id": "PCEP-0098",
-    "module": "operators",
-    "topic": "Precedence",
-    "subtopic": "Exponents Associativity",
-    "difficulty": 4,
-    "estimated_time": 55,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "precedence",
-      "exponentiation"
-    ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
-    "options": [
-      "A) 0",
-      "B) 256",
-      "C) 64",
-      "D) TypeError"
-    ],
-    "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
-  },
-  {
-    "id": "PCEP-0099",
-    "module": "operators",
-    "topic": "Logical",
-    "subtopic": "Short-circuit Returns",
-    "difficulty": 4,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.2",
-    "tags": [
-      "operators",
-      "logical",
-      "short-circuit"
-    ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or [1, 2])",
-    "options": [
-      "A) ''",
-      "B) False",
-      "C) True",
-      "D) [1, 2]"
-    ],
-    "correct": "D",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
-  },
-  {
-    "id": "PCEP-0100",
-    "module": "operators",
-    "topic": "Arithmetic",
-    "subtopic": "Negative Floor Division",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "division",
-      "modulo"
-    ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 3, -5 % 3)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
     "options": [
       "A) -1 1",
-      "B) -1.7",
+      "B) -1.5",
       "C) -2 0",
       "D) -2 1"
     ],
@@ -2500,7 +2425,7 @@ const PCEP_QUESTIONS = [
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
-    "id": "PCEP-0101",
+    "id": "PCEP-0098",
     "module": "operators",
     "topic": "Precedence",
     "subtopic": "Exponents Associativity",
@@ -2525,6 +2450,81 @@ const PCEP_QUESTIONS = [
     "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
   },
   {
+    "id": "PCEP-0099",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
+    "options": [
+      "A) 0",
+      "B) False",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-0100",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
+    "options": [
+      "A) -2 1",
+      "B) -2.5",
+      "C) -3 0",
+      "D) -3 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-0101",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
     "id": "PCEP-0102",
     "module": "operators",
     "topic": "Logical",
@@ -2539,15 +2539,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
     "options": [
-      "A) False",
-      "B) Python",
-      "C) True",
-      "D) []"
+      "A) 0",
+      "B) False",
+      "C) Python",
+      "D) True"
     ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0103",
@@ -2564,12 +2564,12 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
     "options": [
-      "A) -4 1",
-      "B) -4.5",
-      "C) -5 0",
-      "D) -5 1"
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
     ],
     "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
@@ -2614,15 +2614,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
     "options": [
-      "A) False",
-      "B) Python",
-      "C) True",
-      "D) []"
+      "A) 0",
+      "B) False",
+      "C) Python",
+      "D) True"
     ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0106",
@@ -2639,12 +2639,12 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
     "options": [
-      "A) -2 2",
-      "B) -2.3",
-      "C) -3 1",
-      "D) -3 2"
+      "A) -2 1",
+      "B) -2.5",
+      "C) -3 0",
+      "D) -3 1"
     ],
     "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
@@ -2664,15 +2664,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
     "options": [
       "A) 0",
-      "B) 256",
-      "C) 64",
+      "B) 16",
+      "C) None",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
   },
   {
     "id": "PCEP-0108",
@@ -2714,14 +2714,14 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
     "options": [
-      "A) -1 1",
-      "B) -1.5",
-      "C) -2 0",
-      "D) -2 1"
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
     ],
-    "correct": "D",
+    "correct": "B",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
@@ -2739,15 +2739,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
     "options": [
       "A) 0",
-      "B) 6561",
-      "C) 729",
+      "B) 81",
+      "C) None",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
   },
   {
     "id": "PCEP-0111",
@@ -2764,15 +2764,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or 'Python')",
     "options": [
-      "A) 99",
+      "A) ''",
       "B) False",
-      "C) True",
-      "D) []"
+      "C) Python",
+      "D) True"
     ],
-    "correct": "A",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0112",
@@ -2789,14 +2789,14 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 3, -9 % 3)",
     "options": [
-      "A) -2 1",
-      "B) -2.5",
+      "A) -2 0",
+      "B) -3 -1",
       "C) -3 0",
-      "D) -3 1"
+      "D) -3.0"
     ],
-    "correct": "D",
+    "correct": "C",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
@@ -2814,15 +2814,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
     "options": [
       "A) 0",
-      "B) 6561",
-      "C) 729",
+      "B) 16",
+      "C) None",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
   },
   {
     "id": "PCEP-0114",
@@ -2839,15 +2839,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
     "options": [
       "A) 0",
-      "B) 99",
-      "C) False",
+      "B) False",
+      "C) Python",
       "D) True"
     ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0115",
@@ -2914,93 +2914,18 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or 'Python')",
     "options": [
-      "A) 99",
+      "A) ''",
       "B) False",
-      "C) None",
-      "D) True"
-    ],
-    "correct": "A",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
-  },
-  {
-    "id": "PCEP-0118",
-    "module": "operators",
-    "topic": "Arithmetic",
-    "subtopic": "Negative Floor Division",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "division",
-      "modulo"
-    ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
-    "options": [
-      "A) -1 -1",
-      "B) -1 0",
-      "C) -1.0",
-      "D) 0 0"
-    ],
-    "correct": "B",
-    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
-  },
-  {
-    "id": "PCEP-0119",
-    "module": "operators",
-    "topic": "Precedence",
-    "subtopic": "Exponents Associativity",
-    "difficulty": 4,
-    "estimated_time": 55,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "precedence",
-      "exponentiation"
-    ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
-    "options": [
-      "A) 0",
-      "B) 81",
-      "C) None",
-      "D) TypeError"
-    ],
-    "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
-  },
-  {
-    "id": "PCEP-0120",
-    "module": "operators",
-    "topic": "Logical",
-    "subtopic": "Short-circuit Returns",
-    "difficulty": 4,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.2",
-    "tags": [
-      "operators",
-      "logical",
-      "short-circuit"
-    ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
-    "options": [
-      "A) False",
-      "B) None",
       "C) Python",
       "D) True"
     ],
     "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
-    "id": "PCEP-0121",
+    "id": "PCEP-0118",
     "module": "operators",
     "topic": "Arithmetic",
     "subtopic": "Negative Floor Division",
@@ -3025,7 +2950,7 @@ const PCEP_QUESTIONS = [
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
-    "id": "PCEP-0122",
+    "id": "PCEP-0119",
     "module": "operators",
     "topic": "Precedence",
     "subtopic": "Exponents Associativity",
@@ -3050,6 +2975,81 @@ const PCEP_QUESTIONS = [
     "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
   },
   {
+    "id": "PCEP-0120",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
+    "options": [
+      "A) 0",
+      "B) False",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-0121",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "options": [
+      "A) -2 2",
+      "B) -2.3",
+      "C) -3 1",
+      "D) -3 2"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-0122",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 81",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
+  },
+  {
     "id": "PCEP-0123",
     "module": "operators",
     "topic": "Logical",
@@ -3064,15 +3064,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or [1, 2])",
     "options": [
       "A) False",
       "B) None",
-      "C) Python",
-      "D) True"
+      "C) True",
+      "D) [1, 2]"
     ],
-    "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
   },
   {
     "id": "PCEP-0124",
@@ -3139,15 +3139,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
     "options": [
-      "A) 0",
-      "B) 99",
-      "C) False",
+      "A) False",
+      "B) None",
+      "C) Python",
       "D) True"
     ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0127",
@@ -3164,12 +3164,12 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 3, -7 % 3)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 3, -5 % 3)",
     "options": [
-      "A) -2 2",
-      "B) -2.3",
-      "C) -3 1",
-      "D) -3 2"
+      "A) -1 1",
+      "B) -1.7",
+      "C) -2 0",
+      "D) -2 1"
     ],
     "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
@@ -3189,15 +3189,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
     "options": [
       "A) 0",
-      "B) 6561",
-      "C) 729",
+      "B) 256",
+      "C) 64",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
   },
   {
     "id": "PCEP-0129",
@@ -3214,15 +3214,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or [1, 2])",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or [1, 2])",
     "options": [
       "A) False",
-      "B) None",
-      "C) True",
-      "D) [1, 2]"
+      "B) True",
+      "C) [1, 2]",
+      "D) []"
     ],
-    "correct": "D",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
   },
   {
     "id": "PCEP-0130",
@@ -3264,15 +3264,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
     "options": [
       "A) 0",
-      "B) 6561",
-      "C) 729",
+      "B) 16",
+      "C) None",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
   },
   {
     "id": "PCEP-0132",
@@ -3289,18 +3289,93 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or 'Python')",
     "options": [
       "A) ''",
-      "B) 99",
-      "C) False",
+      "B) False",
+      "C) Python",
       "D) True"
     ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0133",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "options": [
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
+    ],
+    "correct": "B",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-0134",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
+    "options": [
+      "A) 0",
+      "B) 6561",
+      "C) 729",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
+  },
+  {
+    "id": "PCEP-0135",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "options": [
+      "A) False",
+      "B) Python",
+      "C) True",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
+    "id": "PCEP-0136",
     "module": "operators",
     "topic": "Arithmetic",
     "subtopic": "Negative Floor Division",
@@ -3325,7 +3400,7 @@ const PCEP_QUESTIONS = [
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
-    "id": "PCEP-0134",
+    "id": "PCEP-0137",
     "module": "operators",
     "topic": "Precedence",
     "subtopic": "Exponents Associativity",
@@ -3339,18 +3414,18 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
     "options": [
       "A) 0",
-      "B) 256",
-      "C) 64",
+      "B) 81",
+      "C) None",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
   },
   {
-    "id": "PCEP-0135",
+    "id": "PCEP-0138",
     "module": "operators",
     "topic": "Logical",
     "subtopic": "Short-circuit Returns",
@@ -3364,18 +3439,18 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
     "options": [
-      "A) False",
-      "B) None",
-      "C) Python",
-      "D) True"
+      "A) 99",
+      "B) False",
+      "C) True",
+      "D) []"
     ],
-    "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+    "correct": "A",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
   },
   {
-    "id": "PCEP-0136",
+    "id": "PCEP-0139",
     "module": "operators",
     "topic": "Arithmetic",
     "subtopic": "Negative Floor Division",
@@ -3389,18 +3464,18 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
     "options": [
-      "A) -1 1",
-      "B) -1.5",
-      "C) -2 0",
-      "D) -2 1"
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
     ],
-    "correct": "D",
+    "correct": "B",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
-    "id": "PCEP-0137",
+    "id": "PCEP-0140",
     "module": "operators",
     "topic": "Precedence",
     "subtopic": "Exponents Associativity",
@@ -3425,7 +3500,7 @@ const PCEP_QUESTIONS = [
     "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
   },
   {
-    "id": "PCEP-0138",
+    "id": "PCEP-0141",
     "module": "operators",
     "topic": "Logical",
     "subtopic": "Short-circuit Returns",
@@ -3448,81 +3523,6 @@ const PCEP_QUESTIONS = [
     ],
     "correct": "C",
     "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
-  },
-  {
-    "id": "PCEP-0139",
-    "module": "operators",
-    "topic": "Arithmetic",
-    "subtopic": "Negative Floor Division",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "division",
-      "modulo"
-    ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
-    "options": [
-      "A) -4 1",
-      "B) -4.5",
-      "C) -5 0",
-      "D) -5 1"
-    ],
-    "correct": "D",
-    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
-  },
-  {
-    "id": "PCEP-0140",
-    "module": "operators",
-    "topic": "Precedence",
-    "subtopic": "Exponents Associativity",
-    "difficulty": 4,
-    "estimated_time": 55,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "precedence",
-      "exponentiation"
-    ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
-    "options": [
-      "A) 0",
-      "B) 256",
-      "C) 64",
-      "D) TypeError"
-    ],
-    "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
-  },
-  {
-    "id": "PCEP-0141",
-    "module": "operators",
-    "topic": "Logical",
-    "subtopic": "Short-circuit Returns",
-    "difficulty": 4,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.2",
-    "tags": [
-      "operators",
-      "logical",
-      "short-circuit"
-    ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
-    "options": [
-      "A) 0",
-      "B) False",
-      "C) Python",
-      "D) True"
-    ],
-    "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0142",
@@ -3564,15 +3564,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
     "options": [
       "A) 0",
-      "B) 256",
-      "C) 64",
+      "B) 81",
+      "C) None",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
   },
   {
     "id": "PCEP-0144",
@@ -3589,18 +3589,168 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or [1, 2])",
     "options": [
-      "A) False",
-      "B) Python",
+      "A) 0",
+      "B) False",
       "C) True",
-      "D) []"
+      "D) [1, 2]"
     ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
   },
   {
     "id": "PCEP-0145",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 3, -5 % 3)",
+    "options": [
+      "A) -1 1",
+      "B) -1.7",
+      "C) -2 0",
+      "D) -2 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-0146",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-0147",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or [1, 2])",
+    "options": [
+      "A) False",
+      "B) True",
+      "C) [1, 2]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-0148",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "options": [
+      "A) -4 1",
+      "B) -4.5",
+      "C) -5 0",
+      "D) -5 1"
+    ],
+    "correct": "D",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-0149",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 16",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-0150",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or [1, 2])",
+    "options": [
+      "A) 0",
+      "B) False",
+      "C) True",
+      "D) [1, 2]"
+    ],
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+  },
+  {
+    "id": "PCEP-0151",
     "module": "operators",
     "topic": "Arithmetic",
     "subtopic": "Negative Floor Division",
@@ -3625,156 +3775,6 @@ const PCEP_QUESTIONS = [
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
-    "id": "PCEP-0146",
-    "module": "operators",
-    "topic": "Precedence",
-    "subtopic": "Exponents Associativity",
-    "difficulty": 4,
-    "estimated_time": 55,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "precedence",
-      "exponentiation"
-    ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
-    "options": [
-      "A) 0",
-      "B) 256",
-      "C) 64",
-      "D) TypeError"
-    ],
-    "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
-  },
-  {
-    "id": "PCEP-0147",
-    "module": "operators",
-    "topic": "Logical",
-    "subtopic": "Short-circuit Returns",
-    "difficulty": 4,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.2",
-    "tags": [
-      "operators",
-      "logical",
-      "short-circuit"
-    ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
-    "options": [
-      "A) False",
-      "B) None",
-      "C) Python",
-      "D) True"
-    ],
-    "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
-  },
-  {
-    "id": "PCEP-0148",
-    "module": "operators",
-    "topic": "Arithmetic",
-    "subtopic": "Negative Floor Division",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "division",
-      "modulo"
-    ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 3, -9 % 3)",
-    "options": [
-      "A) -2 0",
-      "B) -3 -1",
-      "C) -3 0",
-      "D) -3.0"
-    ],
-    "correct": "C",
-    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
-  },
-  {
-    "id": "PCEP-0149",
-    "module": "operators",
-    "topic": "Precedence",
-    "subtopic": "Exponents Associativity",
-    "difficulty": 4,
-    "estimated_time": 55,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "precedence",
-      "exponentiation"
-    ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
-    "options": [
-      "A) 0",
-      "B) 256",
-      "C) 64",
-      "D) TypeError"
-    ],
-    "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
-  },
-  {
-    "id": "PCEP-0150",
-    "module": "operators",
-    "topic": "Logical",
-    "subtopic": "Short-circuit Returns",
-    "difficulty": 4,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.2",
-    "tags": [
-      "operators",
-      "logical",
-      "short-circuit"
-    ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
-    "options": [
-      "A) False",
-      "B) Python",
-      "C) True",
-      "D) []"
-    ],
-    "correct": "B",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
-  },
-  {
-    "id": "PCEP-0151",
-    "module": "operators",
-    "topic": "Arithmetic",
-    "subtopic": "Negative Floor Division",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "division",
-      "modulo"
-    ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
-    "options": [
-      "A) -2 1",
-      "B) -2.5",
-      "C) -3 0",
-      "D) -3 1"
-    ],
-    "correct": "D",
-    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
-  },
-  {
     "id": "PCEP-0152",
     "module": "operators",
     "topic": "Precedence",
@@ -3789,15 +3789,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
     "options": [
       "A) 0",
-      "B) 16",
-      "C) None",
+      "B) 256",
+      "C) 64",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
   },
   {
     "id": "PCEP-0153",
@@ -3839,14 +3839,14 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
     "options": [
-      "A) -1 -1",
-      "B) -1 0",
-      "C) -1.0",
-      "D) 0 0"
+      "A) -1 1",
+      "B) -1.5",
+      "C) -2 0",
+      "D) -2 1"
     ],
-    "correct": "B",
+    "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
@@ -3864,15 +3864,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
     "options": [
       "A) 0",
-      "B) 256",
-      "C) 64",
+      "B) 81",
+      "C) None",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
   },
   {
     "id": "PCEP-0156",
@@ -3889,15 +3889,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
     "options": [
       "A) 99",
       "B) False",
-      "C) None",
-      "D) True"
+      "C) True",
+      "D) []"
     ],
     "correct": "A",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
   },
   {
     "id": "PCEP-0157",
@@ -3914,12 +3914,12 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 2, -3 % 2)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 2, -7 % 2)",
     "options": [
-      "A) -1 1",
-      "B) -1.5",
-      "C) -2 0",
-      "D) -2 1"
+      "A) -3 1",
+      "B) -3.5",
+      "C) -4 0",
+      "D) -4 1"
     ],
     "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
@@ -3989,12 +3989,12 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 3, -5 % 3)",
     "options": [
-      "A) -4 1",
-      "B) -4.5",
-      "C) -5 0",
-      "D) -5 1"
+      "A) -1 1",
+      "B) -1.7",
+      "C) -2 0",
+      "D) -2 1"
     ],
     "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
@@ -4014,93 +4014,18 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
     "options": [
       "A) 0",
-      "B) 81",
-      "C) None",
+      "B) 256",
+      "C) 64",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
   },
   {
     "id": "PCEP-0162",
-    "module": "operators",
-    "topic": "Logical",
-    "subtopic": "Short-circuit Returns",
-    "difficulty": 4,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.2",
-    "tags": [
-      "operators",
-      "logical",
-      "short-circuit"
-    ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
-    "options": [
-      "A) False",
-      "B) None",
-      "C) Python",
-      "D) True"
-    ],
-    "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
-  },
-  {
-    "id": "PCEP-0163",
-    "module": "operators",
-    "topic": "Arithmetic",
-    "subtopic": "Negative Floor Division",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "division",
-      "modulo"
-    ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-7 // 2, -7 % 2)",
-    "options": [
-      "A) -3 1",
-      "B) -3.5",
-      "C) -4 0",
-      "D) -4 1"
-    ],
-    "correct": "D",
-    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
-  },
-  {
-    "id": "PCEP-0164",
-    "module": "operators",
-    "topic": "Precedence",
-    "subtopic": "Exponents Associativity",
-    "difficulty": 4,
-    "estimated_time": 55,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.1",
-    "tags": [
-      "operators",
-      "precedence",
-      "exponentiation"
-    ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 3)",
-    "options": [
-      "A) 0",
-      "B) 6561",
-      "C) 729",
-      "D) TypeError"
-    ],
-    "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 3)."
-  },
-  {
-    "id": "PCEP-0165",
     "module": "operators",
     "topic": "Logical",
     "subtopic": "Short-circuit Returns",
@@ -4125,6 +4050,81 @@ const PCEP_QUESTIONS = [
     "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
+    "id": "PCEP-0163",
+    "module": "operators",
+    "topic": "Arithmetic",
+    "subtopic": "Negative Floor Division",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "division",
+      "modulo"
+    ],
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
+    "options": [
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
+    ],
+    "correct": "B",
+    "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
+  },
+  {
+    "id": "PCEP-0164",
+    "module": "operators",
+    "topic": "Precedence",
+    "subtopic": "Exponents Associativity",
+    "difficulty": 4,
+    "estimated_time": 55,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.1",
+    "tags": [
+      "operators",
+      "precedence",
+      "exponentiation"
+    ],
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(3 ** 2 ** 2)",
+    "options": [
+      "A) 0",
+      "B) 81",
+      "C) None",
+      "D) TypeError"
+    ],
+    "correct": "B",
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 3 ** (2 ** 2)."
+  },
+  {
+    "id": "PCEP-0165",
+    "module": "operators",
+    "topic": "Logical",
+    "subtopic": "Short-circuit Returns",
+    "difficulty": 4,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.2",
+    "tags": [
+      "operators",
+      "logical",
+      "short-circuit"
+    ],
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(None or 'Python')",
+    "options": [
+      "A) False",
+      "B) None",
+      "C) Python",
+      "D) True"
+    ],
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que None es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+  },
+  {
     "id": "PCEP-0166",
     "module": "operators",
     "topic": "Arithmetic",
@@ -4139,14 +4139,14 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 3, -9 % 3)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-3 // 3, -3 % 3)",
     "options": [
-      "A) -2 0",
-      "B) -3 -1",
-      "C) -3 0",
-      "D) -3.0"
+      "A) -1 -1",
+      "B) -1 0",
+      "C) -1.0",
+      "D) 0 0"
     ],
-    "correct": "C",
+    "correct": "B",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
@@ -4164,15 +4164,15 @@ const PCEP_QUESTIONS = [
       "precedence",
       "exponentiation"
     ],
-    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 2)",
+    "question": "¿Cuál es la salida del siguiente fragmento de código?\n\nprint(2 ** 2 ** 3)",
     "options": [
       "A) 0",
-      "B) 16",
-      "C) None",
+      "B) 256",
+      "C) 64",
       "D) TypeError"
     ],
     "correct": "B",
-    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 2)."
+    "explanation": "El operador exponencial (**) es asociativo de derecha a izquierda: 2 ** (2 ** 3)."
   },
   {
     "id": "PCEP-0168",
@@ -4189,15 +4189,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or [1, 2])",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
     "options": [
-      "A) ''",
+      "A) 0",
       "B) False",
-      "C) True",
-      "D) [1, 2]"
+      "C) Python",
+      "D) True"
     ],
-    "correct": "D",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0169",
@@ -4264,15 +4264,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or [1, 2])",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or [1, 2])",
     "options": [
-      "A) False",
-      "B) True",
-      "C) [1, 2]",
-      "D) []"
+      "A) ''",
+      "B) False",
+      "C) True",
+      "D) [1, 2]"
     ],
-    "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
+    "correct": "D",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ([1, 2])."
   },
   {
     "id": "PCEP-0172",
@@ -4339,15 +4339,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 99)",
     "options": [
-      "A) 99",
-      "B) False",
-      "C) True",
-      "D) []"
+      "A) 0",
+      "B) 99",
+      "C) False",
+      "D) True"
     ],
-    "correct": "A",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
   },
   {
     "id": "PCEP-0175",
@@ -4364,12 +4364,12 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 3, -5 % 3)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-5 // 2, -5 % 2)",
     "options": [
-      "A) -1 1",
-      "B) -1.7",
-      "C) -2 0",
-      "D) -2 1"
+      "A) -2 1",
+      "B) -2.5",
+      "C) -3 0",
+      "D) -3 1"
     ],
     "correct": "D",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
@@ -4439,14 +4439,14 @@ const PCEP_QUESTIONS = [
       "division",
       "modulo"
     ],
-    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 2, -9 % 2)",
+    "question": "¿Qué imprime exactamente la siguiente instrucción?\n\nprint(-9 // 3, -9 % 3)",
     "options": [
-      "A) -4 1",
-      "B) -4.5",
-      "C) -5 0",
-      "D) -5 1"
+      "A) -2 0",
+      "B) -3 -1",
+      "C) -3 0",
+      "D) -3.0"
     ],
-    "correct": "D",
+    "correct": "C",
     "explanation": "La división entera (//) en Python redondea hacia abajo al entero inferior más cercano. El operador (%) calcula el residuo matemático complementario."
   },
   {
@@ -4489,15 +4489,15 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint(0 or 'Python')",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 'Python')",
     "options": [
-      "A) 0",
-      "B) False",
-      "C) Python",
-      "D) True"
+      "A) False",
+      "B) Python",
+      "C) True",
+      "D) []"
     ],
-    "correct": "C",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que 0 es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
+    "correct": "B",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0181",
@@ -4564,120 +4564,18 @@ const PCEP_QUESTIONS = [
       "logical",
       "short-circuit"
     ],
-    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint([] or 99)",
+    "question": "¿Qué valor imprime la siguiente expresión?\n\nprint('' or 'Python')",
     "options": [
-      "A) 99",
+      "A) ''",
       "B) False",
-      "C) True",
-      "D) []"
+      "C) Python",
+      "D) True"
     ],
-    "correct": "A",
-    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que [] es considerado falsy, evalúa y retorna directamente el operando derecho (99)."
+    "correct": "C",
+    "explanation": "El operador 'or' evalúa el operando izquierdo. Dado que '' es considerado falsy, evalúa y retorna directamente el operando derecho ('Python')."
   },
   {
     "id": "PCEP-0184",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 3"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0185",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
-    "options": [
-      "A) None",
-      "B) [6, 3]",
-      "C) [6]",
-      "D) []"
-    ],
-    "correct": "B",
-    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
-  },
-  {
-    "id": "PCEP-0186",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 13"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0187",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
-    "options": [
-      "A) None",
-      "B) [6, 3]",
-      "C) [6]",
-      "D) []"
-    ],
-    "correct": "B",
-    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
-  },
-  {
-    "id": "PCEP-0188",
     "module": "loops",
     "topic": "Loops Control",
     "subtopic": "For Else Branching",
@@ -4703,6 +4601,108 @@ const PCEP_QUESTIONS = [
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
+    "id": "PCEP-0185",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -3)))",
+    "options": [
+      "A) None",
+      "B) [8, 5, 2]",
+      "C) [8, 5]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 2, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-0186",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-0187",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-0188",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
     "id": "PCEP-0189",
     "module": "loops",
     "topic": "Range",
@@ -4717,15 +4717,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
     "options": [
       "A) None",
-      "B) [10, 8, 6, 4, 2]",
-      "C) [10, 8, 6, 4]",
+      "B) [6, 4]",
+      "C) [6]",
       "D) []"
     ],
-    "correct": "C",
-    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
+    "correct": "B",
+    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
   },
   {
     "id": "PCEP-0190",
@@ -4768,15 +4768,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -3)))",
     "options": [
       "A) None",
-      "B) [6, 4, 2]",
-      "C) [6, 4]",
+      "B) [8, 5]",
+      "C) [8]",
       "D) []"
     ],
-    "correct": "C",
-    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
+    "correct": "B",
+    "explanation": "range(8, 4, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0192",
@@ -4794,12 +4794,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 4"
+      "D) 3"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -4819,69 +4819,18 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -3)))",
     "options": [
       "A) None",
-      "B) [10, 8, 6, 4]",
-      "C) [10, 8, 6]",
+      "B) [8, 5, 2]",
+      "C) [8, 5]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(10, 4, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(8, 2, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0194",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 13"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0195",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
-    "options": [
-      "A) None",
-      "B) [6, 3]",
-      "C) [6]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
-  },
-  {
-    "id": "PCEP-0196",
     "module": "loops",
     "topic": "Loops Control",
     "subtopic": "For Else Branching",
@@ -4907,6 +4856,57 @@ const PCEP_QUESTIONS = [
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
+    "id": "PCEP-0195",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) TypeError",
+      "C) [8, 5]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(8, 3, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-0196",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
     "id": "PCEP-0197",
     "module": "loops",
     "topic": "Range",
@@ -4921,15 +4921,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -2)))",
     "options": [
       "A) None",
-      "B) [8, 5]",
-      "C) [8]",
+      "B) [8, 6, 4]",
+      "C) [8, 6]",
       "D) []"
     ],
     "correct": "B",
-    "explanation": "range(8, 4, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(8, 3, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (3)."
   },
   {
     "id": "PCEP-0198",
@@ -4947,7 +4947,7 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
@@ -4972,15 +4972,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -2)))",
     "options": [
       "A) None",
-      "B) TypeError",
-      "C) [6]",
+      "B) [8, 6, 4]",
+      "C) [8, 6]",
       "D) []"
     ],
-    "correct": "C",
-    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
+    "correct": "B",
+    "explanation": "range(8, 3, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (3)."
   },
   {
     "id": "PCEP-0200",
@@ -5023,15 +5023,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
     "options": [
       "A) None",
       "B) [10, 7, 4]",
       "C) [10, 7]",
       "D) []"
     ],
-    "correct": "B",
-    "explanation": "range(10, 3, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (3)."
+    "correct": "C",
+    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0202",
@@ -5049,7 +5049,7 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
@@ -5074,15 +5074,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
     "options": [
       "A) None",
-      "B) TypeError",
+      "B) [6, 3]",
       "C) [6]",
       "D) []"
     ],
-    "correct": "C",
-    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
+    "correct": "B",
+    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0204",
@@ -5100,12 +5100,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 13"
+      "D) 14"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -5125,15 +5125,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
     "options": [
       "A) None",
-      "B) [10, 7, 4]",
-      "C) [10, 7]",
+      "B) [10, 8, 6, 4, 2]",
+      "C) [10, 8, 6, 4]",
       "D) []"
     ],
-    "correct": "B",
-    "explanation": "range(10, 3, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (3)."
+    "correct": "C",
+    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0206",
@@ -5151,12 +5151,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 14"
+      "D) 4"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -5176,69 +5176,18 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
     "options": [
       "A) None",
-      "B) [6, 3]",
-      "C) [6]",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0208",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 4"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0209",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -2)))",
-    "options": [
-      "A) None",
-      "B) [8, 6, 4]",
-      "C) [8, 6]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(8, 4, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (4)."
-  },
-  {
-    "id": "PCEP-0210",
     "module": "loops",
     "topic": "Loops Control",
     "subtopic": "For Else Branching",
@@ -5264,7 +5213,7 @@ const PCEP_QUESTIONS = [
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
-    "id": "PCEP-0211",
+    "id": "PCEP-0209",
     "module": "loops",
     "topic": "Range",
     "subtopic": "Negative Range Step",
@@ -5278,69 +5227,18 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
     "options": [
       "A) None",
-      "B) [10, 7, 4]",
-      "C) [10, 7]",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
-    "id": "PCEP-0212",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 4"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0213",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
-    "options": [
-      "A) None",
-      "B) [6, 3]",
-      "C) [6]",
-      "D) []"
-    ],
-    "correct": "B",
-    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
-  },
-  {
-    "id": "PCEP-0214",
+    "id": "PCEP-0210",
     "module": "loops",
     "topic": "Loops Control",
     "subtopic": "For Else Branching",
@@ -5366,6 +5264,108 @@ const PCEP_QUESTIONS = [
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
+    "id": "PCEP-0211",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 4, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-0212",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-0213",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(10, 3, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-0214",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 15"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
     "id": "PCEP-0215",
     "module": "loops",
     "topic": "Range",
@@ -5380,15 +5380,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -3)))",
     "options": [
       "A) None",
-      "B) [8, 6, 4]",
-      "C) [8, 6]",
+      "B) [8, 5, 2]",
+      "C) [8, 5]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(8, 4, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(8, 2, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0216",
@@ -5457,69 +5457,18 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 15"
+      "D) 3"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
     "id": "PCEP-0219",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
-    "options": [
-      "A) None",
-      "B) TypeError",
-      "C) [10, 7, 4]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
-  },
-  {
-    "id": "PCEP-0220",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 4"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0221",
     "module": "loops",
     "topic": "Range",
     "subtopic": "Negative Range Step",
@@ -5544,6 +5493,57 @@ const PCEP_QUESTIONS = [
     "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
   },
   {
+    "id": "PCEP-0220",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 3"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-0221",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [8, 6, 4]",
+      "C) [8, 6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(8, 3, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
     "id": "PCEP-0222",
     "module": "loops",
     "topic": "Loops Control",
@@ -5559,12 +5559,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 4"
+      "D) 13"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -5610,12 +5610,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 13"
+      "D) 3"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -5635,15 +5635,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
     "options": [
       "A) None",
-      "B) [8, 6, 4, 2]",
-      "C) [8, 6, 4]",
+      "B) [6, 3]",
+      "C) [6]",
       "D) []"
     ],
-    "correct": "C",
-    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+    "correct": "B",
+    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0226",
@@ -5661,12 +5661,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 3"
+      "D) 14"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -5686,15 +5686,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
     "options": [
       "A) None",
-      "B) TypeError",
-      "C) [8, 5]",
+      "B) [10, 8, 6, 4, 2]",
+      "C) [10, 8, 6, 4]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(8, 3, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (3)."
+    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0228",
@@ -5712,120 +5712,18 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 13"
+      "D) 4"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
     "id": "PCEP-0229",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
-    "options": [
-      "A) None",
-      "B) [6, 4, 2]",
-      "C) [6, 4]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
-  },
-  {
-    "id": "PCEP-0230",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 15"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0231",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
-    "options": [
-      "A) None",
-      "B) [8, 6, 4, 2]",
-      "C) [8, 6, 4]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
-  },
-  {
-    "id": "PCEP-0232",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 3"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0233",
     "module": "loops",
     "topic": "Range",
     "subtopic": "Negative Range Step",
@@ -5850,6 +5748,108 @@ const PCEP_QUESTIONS = [
     "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
   },
   {
+    "id": "PCEP-0230",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-0231",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -3)))",
+    "options": [
+      "A) None",
+      "B) [8, 5]",
+      "C) [8]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(8, 4, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-0232",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-0233",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
     "id": "PCEP-0234",
     "module": "loops",
     "topic": "Loops Control",
@@ -5865,7 +5865,7 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
@@ -5916,12 +5916,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 13"
+      "D) 4"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -5941,15 +5941,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
     "options": [
       "A) None",
-      "B) [8, 6, 4]",
-      "C) [8, 6]",
+      "B) [6, 4, 2]",
+      "C) [6, 4]",
       "D) []"
     ],
-    "correct": "B",
-    "explanation": "range(8, 3, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (3)."
+    "correct": "C",
+    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0238",
@@ -5967,12 +5967,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 4"
+      "D) 3"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -5992,69 +5992,18 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -2)))",
     "options": [
       "A) None",
-      "B) TypeError",
+      "B) [6, 4]",
       "C) [6]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(6, 4, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0240",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 4"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0241",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
-    "options": [
-      "A) None",
-      "B) TypeError",
-      "C) [10, 7, 4]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
-  },
-  {
-    "id": "PCEP-0242",
     "module": "loops",
     "topic": "Loops Control",
     "subtopic": "For Else Branching",
@@ -6080,7 +6029,7 @@ const PCEP_QUESTIONS = [
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
-    "id": "PCEP-0243",
+    "id": "PCEP-0241",
     "module": "loops",
     "topic": "Range",
     "subtopic": "Negative Range Step",
@@ -6094,18 +6043,18 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -3)))",
     "options": [
       "A) None",
-      "B) [8, 6, 4, 2]",
-      "C) [8, 6, 4]",
+      "B) [8, 5, 2]",
+      "C) [8, 5]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+    "explanation": "range(8, 2, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (2)."
   },
   {
-    "id": "PCEP-0244",
+    "id": "PCEP-0242",
     "module": "loops",
     "topic": "Loops Control",
     "subtopic": "For Else Branching",
@@ -6131,6 +6080,57 @@ const PCEP_QUESTIONS = [
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
+    "id": "PCEP-0243",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -2)))",
+    "options": [
+      "A) None",
+      "B) [6, 4]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 4, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (4)."
+  },
+  {
+    "id": "PCEP-0244",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
     "id": "PCEP-0245",
     "module": "loops",
     "topic": "Range",
@@ -6145,15 +6145,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
     "options": [
       "A) None",
-      "B) [10, 7, 4]",
-      "C) [10, 7]",
+      "B) TypeError",
+      "C) [6]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0246",
@@ -6196,15 +6196,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 3, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -2)))",
     "options": [
       "A) None",
-      "B) TypeError",
-      "C) [8, 5]",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
       "D) []"
     ],
-    "correct": "C",
-    "explanation": "range(8, 3, -3) inicia en 8 y resta 3 sucesivamente, excluyendo el límite final (3)."
+    "correct": "B",
+    "explanation": "range(10, 3, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (3)."
   },
   {
     "id": "PCEP-0248",
@@ -6222,12 +6222,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 3"
+      "D) 13"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -6247,15 +6247,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -2)))",
     "options": [
       "A) None",
-      "B) [6, 4]",
-      "C) [6]",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(6, 4, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(10, 4, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0250",
@@ -6298,15 +6298,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
     "options": [
       "A) None",
-      "B) [6, 4]",
+      "B) [6, 3]",
       "C) [6]",
       "D) []"
     ],
     "correct": "B",
-    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
+    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0252",
@@ -6324,12 +6324,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 13"
+      "D) 3"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -6349,15 +6349,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
     "options": [
       "A) None",
-      "B) TypeError",
-      "C) [10, 7, 4]",
+      "B) [6, 3]",
+      "C) [6]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
+    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
   },
   {
     "id": "PCEP-0254",
@@ -6400,15 +6400,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
     "options": [
       "A) None",
-      "B) [8, 6, 4, 2]",
-      "C) [8, 6, 4]",
+      "B) [10, 8, 6, 4, 2]",
+      "C) [10, 8, 6, 4]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0256",
@@ -6426,12 +6426,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 3"
+      "D) 15"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -6451,15 +6451,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
     "options": [
       "A) None",
-      "B) [8, 6, 4, 2]",
-      "C) [8, 6, 4]",
+      "B) [10, 8, 6, 4, 2]",
+      "C) [10, 8, 6, 4]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
+    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0258",
@@ -6477,12 +6477,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(4):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 3"
+      "D) 14"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -6502,15 +6502,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 4, -3)))",
     "options": [
       "A) None",
-      "B) [6, 4]",
+      "B) TypeError",
       "C) [6]",
       "D) []"
     ],
-    "correct": "B",
-    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
+    "correct": "C",
+    "explanation": "range(6, 4, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0260",
@@ -6528,12 +6528,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 3"
+      "D) 15"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -6553,15 +6553,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -3)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -3)))",
     "options": [
       "A) None",
-      "B) TypeError",
-      "C) [10, 7, 4]",
+      "B) [6, 3]",
+      "C) [6]",
       "D) []"
     ],
-    "correct": "C",
-    "explanation": "range(10, 2, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (2)."
+    "correct": "B",
+    "explanation": "range(6, 2, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0262",
@@ -6579,12 +6579,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 15"
+      "D) 13"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -6604,15 +6604,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 4, -2)))",
     "options": [
       "A) None",
-      "B) [10, 8, 6, 4]",
-      "C) [10, 8, 6]",
+      "B) [8, 6, 4]",
+      "C) [8, 6]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(10, 4, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (4)."
+    "explanation": "range(8, 4, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0264",
@@ -6630,12 +6630,12 @@ const PCEP_QUESTIONS = [
       "else",
       "break"
     ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if False and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
     "options": [
       "A) 1",
       "B) 10",
       "C) 12",
-      "D) 15"
+      "D) 13"
     ],
     "correct": "D",
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
@@ -6655,171 +6655,18 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(8, 2, -2)))",
     "options": [
       "A) None",
-      "B) [10, 8, 6, 4]",
-      "C) [10, 8, 6]",
+      "B) [8, 6, 4, 2]",
+      "C) [8, 6, 4]",
       "D) []"
     ],
-    "correct": "B",
-    "explanation": "range(10, 3, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (3)."
+    "correct": "C",
+    "explanation": "range(8, 2, -2) inicia en 8 y resta 2 sucesivamente, excluyendo el límite final (2)."
   },
   {
     "id": "PCEP-0266",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 3"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0267",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -2)))",
-    "options": [
-      "A) None",
-      "B) [6, 4]",
-      "C) [6]",
-      "D) []"
-    ],
-    "correct": "B",
-    "explanation": "range(6, 3, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (3)."
-  },
-  {
-    "id": "PCEP-0268",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 4"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0269",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
-    "options": [
-      "A) None",
-      "B) [10, 7, 4]",
-      "C) [10, 7]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
-  },
-  {
-    "id": "PCEP-0270",
-    "module": "loops",
-    "topic": "Loops Control",
-    "subtopic": "For Else Branching",
-    "difficulty": 4,
-    "estimated_time": 60,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "for",
-      "else",
-      "break"
-    ],
-    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 2:\n        break\nelse:\n    c += 10\nprint(c)",
-    "options": [
-      "A) 1",
-      "B) 10",
-      "C) 12",
-      "D) 3"
-    ],
-    "correct": "D",
-    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
-  },
-  {
-    "id": "PCEP-0271",
-    "module": "loops",
-    "topic": "Range",
-    "subtopic": "Negative Range Step",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "2.3",
-    "tags": [
-      "loops",
-      "range",
-      "sequence"
-    ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -3)))",
-    "options": [
-      "A) None",
-      "B) [10, 7, 4]",
-      "C) [10, 7]",
-      "D) []"
-    ],
-    "correct": "C",
-    "explanation": "range(10, 4, -3) inicia en 10 y resta 3 sucesivamente, excluyendo el límite final (4)."
-  },
-  {
-    "id": "PCEP-0272",
     "module": "loops",
     "topic": "Loops Control",
     "subtopic": "For Else Branching",
@@ -6845,6 +6692,159 @@ const PCEP_QUESTIONS = [
     "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
   },
   {
+    "id": "PCEP-0267",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 3, -3)))",
+    "options": [
+      "A) None",
+      "B) [6, 3]",
+      "C) [6]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(6, 3, -3) inicia en 6 y resta 3 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-0268",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-0269",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 3, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
+      "D) []"
+    ],
+    "correct": "B",
+    "explanation": "range(10, 3, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (3)."
+  },
+  {
+    "id": "PCEP-0270",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(5):\n    c += 1\n    if True and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 4"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
+    "id": "PCEP-0271",
+    "module": "loops",
+    "topic": "Range",
+    "subtopic": "Negative Range Step",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "range",
+      "sequence"
+    ],
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 2, -2)))",
+    "options": [
+      "A) None",
+      "B) [10, 8, 6, 4, 2]",
+      "C) [10, 8, 6, 4]",
+      "D) []"
+    ],
+    "correct": "C",
+    "explanation": "range(10, 2, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (2)."
+  },
+  {
+    "id": "PCEP-0272",
+    "module": "loops",
+    "topic": "Loops Control",
+    "subtopic": "For Else Branching",
+    "difficulty": 4,
+    "estimated_time": 60,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "2.3",
+    "tags": [
+      "loops",
+      "for",
+      "else",
+      "break"
+    ],
+    "question": "¿Qué imprime la variable c al finalizar este código?\n\nc = 0\nfor i in range(3):\n    c += 1\n    if False and i == 3:\n        break\nelse:\n    c += 10\nprint(c)",
+    "options": [
+      "A) 1",
+      "B) 10",
+      "C) 12",
+      "D) 13"
+    ],
+    "correct": "D",
+    "explanation": "El bloque 'else' de un bucle se ejecuta si y solo si el bucle finaliza de forma natural sin haber salido mediante una sentencia 'break'."
+  },
+  {
     "id": "PCEP-0273",
     "module": "loops",
     "topic": "Range",
@@ -6859,15 +6859,15 @@ const PCEP_QUESTIONS = [
       "range",
       "sequence"
     ],
-    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(6, 2, -2)))",
+    "question": "¿Qué salida produce esta instrucción?\n\nprint(list(range(10, 4, -2)))",
     "options": [
       "A) None",
-      "B) [6, 4, 2]",
-      "C) [6, 4]",
+      "B) [10, 8, 6, 4]",
+      "C) [10, 8, 6]",
       "D) []"
     ],
     "correct": "C",
-    "explanation": "range(6, 2, -2) inicia en 6 y resta 2 sucesivamente, excluyendo el límite final (2)."
+    "explanation": "range(10, 4, -2) inicia en 10 y resta 2 sucesivamente, excluyendo el límite final (4)."
   },
   {
     "id": "PCEP-0274",
@@ -6884,10 +6884,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -6934,9 +6934,9 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
+      "A) 10",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -6984,10 +6984,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7084,14 +7084,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -7184,10 +7184,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7284,14 +7284,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 5",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -7384,10 +7384,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 45",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7434,14 +7434,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 5",
+      "A) 15",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -7484,9 +7484,9 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
+      "A) 10",
       "B) 30",
       "C) None",
       "D) UnboundLocalError"
@@ -7534,14 +7534,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -7584,10 +7584,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 30",
+      "A) 10",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7634,10 +7634,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 30",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7684,10 +7684,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 30",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7734,10 +7734,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 30",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7784,10 +7784,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7834,14 +7834,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
       "A) 15",
-      "B) 30",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -7884,10 +7884,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 30",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7934,10 +7934,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -7984,14 +7984,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 5",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8034,14 +8034,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 5",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8084,14 +8084,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8134,14 +8134,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 30",
+      "A) 15",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8184,10 +8184,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -8234,14 +8234,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 5",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8284,10 +8284,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -8334,9 +8334,9 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
+      "A) 15",
       "B) 5",
       "C) None",
       "D) UnboundLocalError"
@@ -8384,10 +8384,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 30",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -8434,10 +8434,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -8484,14 +8484,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 5",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8534,14 +8534,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8584,14 +8584,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 30",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8684,14 +8684,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 30",
+      "A) 10",
+      "B) 5",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "A",
+    "correct": "B",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8734,14 +8734,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
       "A) 10",
-      "B) 5",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -8784,10 +8784,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
-      "B) 20",
+      "A) 15",
+      "B) 45",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -8834,9 +8834,9 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 10",
+      "A) 15",
       "B) 5",
       "C) None",
       "D) UnboundLocalError"
@@ -8884,10 +8884,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 2\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 30",
+      "A) 10",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -8934,10 +8934,10 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 15\ndef modify():\n    val = 15 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 2\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 45",
+      "A) 10",
+      "B) 20",
       "C) None",
       "D) UnboundLocalError"
     ],
@@ -9084,14 +9084,14 @@ const PCEP_QUESTIONS = [
       "scopes",
       "local"
     ],
-    "question": "¿Qué valor imprime el siguiente código?\n\nval = 5\ndef modify():\n    val = 5 * 3\nmodify()\nprint(val)",
+    "question": "¿Qué valor imprime el siguiente código?\n\nval = 10\ndef modify():\n    val = 10 * 3\nmodify()\nprint(val)",
     "options": [
-      "A) 15",
-      "B) 5",
+      "A) 10",
+      "B) 30",
       "C) None",
       "D) UnboundLocalError"
     ],
-    "correct": "B",
+    "correct": "A",
     "explanation": "La variable 'val' asignada dentro de la función 'modify()' crea un ámbito local nuevo, por lo que la variable global homónima del módulo permanece sin cambios."
   },
   {
@@ -9134,11 +9134,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9159,15 +9159,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:5:2])",
     "options": [
-      "A) Entr",
-      "B) Entry",
-      "C) Et",
-      "D) IndexError"
+      "A) Entry",
+      "B) Ety",
+      "C) IndexError",
+      "D) None"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0366",
@@ -9209,11 +9209,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9234,15 +9234,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Python",
+      "C) yh",
+      "D) ytho"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0369",
@@ -9284,11 +9284,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9309,15 +9309,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntry"
+      "A) Entr",
+      "B) Entry",
+      "C) Et",
+      "D) IndexError"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0372",
@@ -9359,11 +9359,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9434,11 +9434,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9459,15 +9459,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
     "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0378",
@@ -9534,15 +9534,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0381",
@@ -9584,11 +9584,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9609,15 +9609,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Python",
-      "C) yh",
-      "D) yth"
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0384",
@@ -9659,10 +9659,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
+      "B) [20, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -9684,15 +9684,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
-      "A) Entr",
-      "B) Entry",
-      "C) Et",
-      "D) IndexError"
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0387",
@@ -9734,11 +9734,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9759,15 +9759,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
     "options": [
-      "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "A) Entr",
+      "B) Entry",
+      "C) Et",
+      "D) IndexError"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0390",
@@ -9834,15 +9834,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0393",
@@ -9884,11 +9884,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9909,15 +9909,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
     "options": [
-      "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0396",
@@ -9959,11 +9959,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
-      "C) [99, 40]",
+      "B) [10, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -9984,15 +9984,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Por",
+      "C) Progr",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0399",
@@ -10034,10 +10034,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
+      "B) [20, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -10059,12 +10059,12 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:5:2])",
     "options": [
-      "A) IndexError",
-      "B) Pto",
-      "C) Pytho",
-      "D) Python"
+      "A) Entry",
+      "B) Ety",
+      "C) IndexError",
+      "D) None"
     ],
     "correct": "B",
     "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
@@ -10109,10 +10109,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -10134,15 +10134,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Python",
+      "C) yh",
+      "D) yth"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0405",
@@ -10184,10 +10184,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -10209,15 +10209,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0408",
@@ -10259,10 +10259,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
+      "B) [10, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -10284,12 +10284,12 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:5:2])",
     "options": [
-      "A) IndexError",
-      "B) Python",
-      "C) yh",
-      "D) ytho"
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntry"
     ],
     "correct": "C",
     "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
@@ -10359,15 +10359,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
     "options": [
       "A) IndexError",
-      "B) Python",
-      "C) yh",
-      "D) yth"
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0414",
@@ -10434,15 +10434,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:5:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
       "A) IndexError",
-      "B) Por",
-      "C) Progr",
-      "D) Programmer"
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0417",
@@ -10484,10 +10484,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -10559,11 +10559,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -10584,15 +10584,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:5:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rogr"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0423",
@@ -10634,11 +10634,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -10659,15 +10659,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
       "A) IndexError",
-      "B) Programmer",
-      "C) rg",
-      "D) rog"
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0426",
@@ -10709,10 +10709,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
+      "B) [10, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -10734,15 +10734,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:5:2])",
     "options": [
-      "A) IndexError",
-      "B) Pt",
-      "C) Pyth",
-      "D) Python"
+      "A) Entry",
+      "B) Ety",
+      "C) IndexError",
+      "D) None"
     ],
     "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0429",
@@ -10784,11 +10784,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
-      "C) [99, 30]",
+      "B) [20, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -10809,15 +10809,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
     "options": [
-      "A) IndexError",
-      "B) Po",
-      "C) Prog",
-      "D) Programmer"
+      "A) Entry",
+      "B) IndexError",
+      "C) nr",
+      "D) ntr"
     ],
-    "correct": "B",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "C",
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0432",
@@ -10859,11 +10859,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [10, 40]",
-      "C) [99, 40]",
+      "B) [20, 30]",
+      "C) [99, 30]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -10884,15 +10884,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[0:5:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Pto",
+      "C) Pytho",
+      "D) Python"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0435",
@@ -10959,15 +10959,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[0:4:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Po",
+      "C) Prog",
+      "D) Programmer"
     ],
-    "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "correct": "B",
+    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0438",
@@ -11009,11 +11009,11 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
-      "C) [99, 30]",
+      "B) [10, 40]",
+      "C) [99, 40]",
       "D) [99, 99]"
     ],
     "correct": "C",
@@ -11034,15 +11034,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
     "options": [
       "A) IndexError",
       "B) Python",
       "C) yh",
-      "D) yth"
+      "D) ytho"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0441",
@@ -11084,10 +11084,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 40]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 40]",
+      "B) [10, 40]",
       "C) [99, 40]",
       "D) [99, 99]"
     ],
@@ -11234,10 +11234,10 @@ const PCEP_QUESTIONS = [
       "mutability",
       "references"
     ],
-    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [20, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
+    "question": "¿Qué imprime el siguiente fragmento de código?\n\nl1 = [10, 30]\nl2 = l1\nl2[0] = 99\nprint(l1)",
     "options": [
       "A) TypeError",
-      "B) [20, 30]",
+      "B) [10, 30]",
       "C) [99, 30]",
       "D) [99, 99]"
     ],
@@ -11259,15 +11259,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[1:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Python'[1:5:2])",
     "options": [
-      "A) Entry",
-      "B) IndexError",
-      "C) nr",
-      "D) ntr"
+      "A) IndexError",
+      "B) Python",
+      "C) yh",
+      "D) ytho"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 5 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0450",
@@ -11334,15 +11334,15 @@ const PCEP_QUESTIONS = [
       "sequences",
       "strings"
     ],
-    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Entry'[0:4:2])",
+    "question": "¿Cuál es el output de esta rebanada de texto?\n\nprint('Programmer'[1:4:2])",
     "options": [
-      "A) Entr",
-      "B) Entry",
-      "C) Et",
-      "D) IndexError"
+      "A) IndexError",
+      "B) Programmer",
+      "C) rg",
+      "D) rog"
     ],
     "correct": "C",
-    "explanation": "El rebanado toma caracteres desde 0 hasta 4 excluido, saltando de 2 en 2."
+    "explanation": "El rebanado toma caracteres desde 1 hasta 4 excluido, saltando de 2 en 2."
   },
   {
     "id": "PCEP-0453",

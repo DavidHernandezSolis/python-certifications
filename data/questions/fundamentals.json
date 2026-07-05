@@ -39,15 +39,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x10)",
     "options": [
-      "A) 0b10000x8",
-      "B) 14",
-      "C) 16",
-      "D) 18"
+      "A) 0b110x10",
+      "B) 17",
+      "C) 19",
+      "D) 21"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0x8 equivale a 8 decimal. 8 + 8 = 16."
+    "explanation": "0b11 equivale a 3 decimal. 0x10 equivale a 16 decimal. 3 + 16 = 19."
   },
   {
     "id": "PCEP-1100-001",
@@ -64,15 +64,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='$')\nprint('Z')",
     "options": [
       "A) X Y Z",
       "B) X#Y\nZ",
-      "C) X#Y Z",
-      "D) XY Z"
+      "C) X#Y$Z",
+      "D) XY$Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-002",
@@ -89,11 +89,11 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.0))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.8))",
     "options": [
       "A) -4",
       "B) -5",
-      "C) -5.0",
+      "C) -5.8",
       "D) -6"
     ],
     "correct": "B",
@@ -114,15 +114,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0xc)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x10)",
     "options": [
-      "A) 0b10000xc",
-      "B) 18",
-      "C) 20",
-      "D) 22"
+      "A) 0b10100x10",
+      "B) 24",
+      "C) 26",
+      "D) 28"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0xc equivale a 12 decimal. 8 + 12 = 20."
+    "explanation": "0b1010 equivale a 10 decimal. 0x10 equivale a 16 decimal. 10 + 16 = 26."
   },
   {
     "id": "PCEP-1100-004",
@@ -139,15 +139,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "B) XY Z",
+      "C) X_Y\nZ",
+      "D) X_Y Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-005",
@@ -164,11 +164,11 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.3))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.6))",
     "options": [
       "A) -1",
       "B) -2",
-      "C) -2.3",
+      "C) -2.6",
       "D) -3"
     ],
     "correct": "B",
@@ -189,15 +189,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x8)",
     "options": [
-      "A) 0b10000x8",
-      "B) 14",
-      "C) 16",
-      "D) 18"
+      "A) 0b10100x8",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0x8 equivale a 8 decimal. 8 + 8 = 16."
+    "explanation": "0b1010 equivale a 10 decimal. 0x8 equivale a 8 decimal. 10 + 8 = 18."
   },
   {
     "id": "PCEP-1100-007",
@@ -239,15 +239,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.7))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.8))",
     "options": [
       "A) -1",
-      "B) -1.7",
-      "C) -2",
-      "D) 0"
+      "B) -2",
+      "C) -2.8",
+      "D) -3"
     ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
   },
   {
     "id": "PCEP-1100-009",
@@ -264,318 +264,18 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x4)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x8)",
     "options": [
-      "A) 0b10100x4",
-      "B) 12",
-      "C) 14",
-      "D) 16"
+      "A) 0b10000x8",
+      "B) 14",
+      "C) 16",
+      "D) 18"
     ],
     "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0x4 equivale a 4 decimal. 10 + 4 = 14."
+    "explanation": "0b1000 equivale a 8 decimal. 0x8 equivale a 8 decimal. 8 + 8 = 16."
   },
   {
     "id": "PCEP-1100-010",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-011",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.2))",
-    "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.2",
-      "D) -4"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
-  },
-  {
-    "id": "PCEP-1100-012",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0xa)",
-    "options": [
-      "A) 0b100xa",
-      "B) 10",
-      "C) 12",
-      "D) 14"
-    ],
-    "correct": "C",
-    "explanation": "0b10 equivale a 2 decimal. 0xa equivale a 10 decimal. 2 + 10 = 12."
-  },
-  {
-    "id": "PCEP-1100-013",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='@')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y@Z",
-      "D) XY@Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-014",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.7))",
-    "options": [
-      "A) -5",
-      "B) -6",
-      "C) -6.7",
-      "D) -7"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
-  },
-  {
-    "id": "PCEP-1100-015",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x10)",
-    "options": [
-      "A) 0b1010x10",
-      "B) 19",
-      "C) 21",
-      "D) 23"
-    ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x10 equivale a 16 decimal. 5 + 16 = 21."
-  },
-  {
-    "id": "PCEP-1100-016",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y Z",
-      "D) XY Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-017",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.8))",
-    "options": [
-      "A) -1",
-      "B) -1.8",
-      "C) -2",
-      "D) 0"
-    ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
-  },
-  {
-    "id": "PCEP-1100-018",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x10)",
-    "options": [
-      "A) 0b10100x10",
-      "B) 24",
-      "C) 26",
-      "D) 28"
-    ],
-    "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0x10 equivale a 16 decimal. 10 + 16 = 26."
-  },
-  {
-    "id": "PCEP-1100-019",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end=' ')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X#Y\nZ",
-      "C) X#Y Z",
-      "D) XY Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-020",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.8))",
-    "options": [
-      "A) -1",
-      "B) -2",
-      "C) -2.8",
-      "D) -3"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
-  },
-  {
-    "id": "PCEP-1100-021",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xa)",
-    "options": [
-      "A) 0b1010xa",
-      "B) 13",
-      "C) 15",
-      "D) 17"
-    ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0xa equivale a 10 decimal. 5 + 10 = 15."
-  },
-  {
-    "id": "PCEP-1100-022",
     "module": "fundamentals",
     "topic": "Basic IO",
     "subtopic": "Print Separators",
@@ -600,7 +300,7 @@
     "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
-    "id": "PCEP-1100-023",
+    "id": "PCEP-1100-011",
     "module": "fundamentals",
     "topic": "Casting",
     "subtopic": "Type Conversion",
@@ -614,93 +314,18 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.0))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.6))",
     "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.0",
-      "D) -5"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
-  },
-  {
-    "id": "PCEP-1100-024",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x8)",
-    "options": [
-      "A) 0b1100x8",
-      "B) 12",
-      "C) 14",
-      "D) 16"
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.6"
     ],
     "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0x8 equivale a 8 decimal. 6 + 8 = 14."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
-    "id": "PCEP-1100-025",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='@')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X#Y\nZ",
-      "C) X#Y@Z",
-      "D) XY@Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-026",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.2))",
-    "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.2",
-      "D) -4"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
-  },
-  {
-    "id": "PCEP-1100-027",
+    "id": "PCEP-1100-012",
     "module": "fundamentals",
     "topic": "Literals",
     "subtopic": "Numeric Bases",
@@ -725,7 +350,232 @@
     "explanation": "0b11 equivale a 3 decimal. 0xa equivale a 10 decimal. 3 + 10 = 13."
   },
   {
-    "id": "PCEP-1100-028",
+    "id": "PCEP-1100-013",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='@')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X#Y\nZ",
+      "C) X#Y@Z",
+      "D) XY@Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-014",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.2))",
+    "options": [
+      "A) -1",
+      "B) -2",
+      "C) -2.2",
+      "D) -3"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
+  },
+  {
+    "id": "PCEP-1100-015",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xc)",
+    "options": [
+      "A) 0b1010xc",
+      "B) 15",
+      "C) 17",
+      "D) 19"
+    ],
+    "correct": "C",
+    "explanation": "0b101 equivale a 5 decimal. 0xc equivale a 12 decimal. 5 + 12 = 17."
+  },
+  {
+    "id": "PCEP-1100-016",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='@')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y@Z",
+      "D) XY@Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-017",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.4))",
+    "options": [
+      "A) -1",
+      "B) -2",
+      "C) -2.4",
+      "D) -3"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
+  },
+  {
+    "id": "PCEP-1100-018",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x10)",
+    "options": [
+      "A) 0b10000x10",
+      "B) 22",
+      "C) 24",
+      "D) 26"
+    ],
+    "correct": "C",
+    "explanation": "0b1000 equivale a 8 decimal. 0x10 equivale a 16 decimal. 8 + 16 = 24."
+  },
+  {
+    "id": "PCEP-1100-019",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='!')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y!Z",
+      "D) XY!Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-020",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.7))",
+    "options": [
+      "A) -6",
+      "B) -7",
+      "C) -7.7",
+      "D) -8"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
+  },
+  {
+    "id": "PCEP-1100-021",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x4)",
+    "options": [
+      "A) 0b1010x4",
+      "B) 11",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": "D",
+    "explanation": "0b101 equivale a 5 decimal. 0x4 equivale a 4 decimal. 5 + 4 = 9."
+  },
+  {
+    "id": "PCEP-1100-022",
     "module": "fundamentals",
     "topic": "Basic IO",
     "subtopic": "Print Separators",
@@ -750,6 +600,156 @@
     "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
   },
   {
+    "id": "PCEP-1100-023",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.4))",
+    "options": [
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.4"
+    ],
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
+  },
+  {
+    "id": "PCEP-1100-024",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x4)",
+    "options": [
+      "A) 0b1010x4",
+      "B) 11",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": "D",
+    "explanation": "0b101 equivale a 5 decimal. 0x4 equivale a 4 decimal. 5 + 4 = 9."
+  },
+  {
+    "id": "PCEP-1100-025",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
+    "options": [
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY@Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-026",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.4))",
+    "options": [
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.4"
+    ],
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
+  },
+  {
+    "id": "PCEP-1100-027",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
+    "options": [
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
+  },
+  {
+    "id": "PCEP-1100-028",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
+    "options": [
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY$Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+  },
+  {
     "id": "PCEP-1100-029",
     "module": "fundamentals",
     "topic": "Casting",
@@ -764,15 +764,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.9))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.5))",
     "options": [
-      "A) -1",
-      "B) -1.9",
-      "C) -2",
-      "D) 0"
+      "A) -4",
+      "B) -5",
+      "C) -5.5",
+      "D) -6"
     ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
   },
   {
     "id": "PCEP-1100-030",
@@ -789,15 +789,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x10)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xa)",
     "options": [
-      "A) 0b110x10",
-      "B) 17",
-      "C) 19",
-      "D) 21"
+      "A) 0b1010xa",
+      "B) 13",
+      "C) 15",
+      "D) 17"
     ],
     "correct": "C",
-    "explanation": "0b11 equivale a 3 decimal. 0x10 equivale a 16 decimal. 3 + 16 = 19."
+    "explanation": "0b101 equivale a 5 decimal. 0xa equivale a 10 decimal. 5 + 10 = 15."
   },
   {
     "id": "PCEP-1100-031",
@@ -814,15 +814,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='@')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='$')\nprint('Z')",
     "options": [
       "A) X Y Z",
       "B) X*Y\nZ",
-      "C) X*Y@Z",
-      "D) XY@Z"
+      "C) X*Y$Z",
+      "D) XY$Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-032",
@@ -839,15 +839,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.5))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.7))",
     "options": [
-      "A) -7",
-      "B) -8",
-      "C) -8.5",
-      "D) -9"
+      "A) -1",
+      "B) -1.7",
+      "C) -2",
+      "D) 0"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "correct": "A",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
   },
   {
     "id": "PCEP-1100-033",
@@ -864,15 +864,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0xa)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
     "options": [
-      "A) 0b10100xa",
-      "B) 18",
-      "C) 20",
-      "D) 22"
+      "A) 0b1010x8",
+      "B) 11",
+      "C) 13",
+      "D) 15"
     ],
     "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0xa equivale a 10 decimal. 10 + 10 = 20."
+    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
   },
   {
     "id": "PCEP-1100-034",
@@ -889,15 +889,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='!')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y Z",
-      "D) XY Z"
+      "B) X#Y\nZ",
+      "C) X#Y!Z",
+      "D) XY!Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-035",
@@ -914,15 +914,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.7))",
     "options": [
-      "A) -7",
+      "A) -10",
       "B) -8",
-      "C) -8.8",
-      "D) -9"
+      "C) -9",
+      "D) -9.7"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
     "id": "PCEP-1100-036",
@@ -964,15 +964,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end='!')\nprint('Z')",
     "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY Z"
+      "A) X Y Z",
+      "B) X#Y\nZ",
+      "C) X#Y!Z",
+      "D) XY!Z"
     ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-038",
@@ -989,15 +989,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.4))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.0))",
     "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.4",
-      "D) -4"
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.0"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
     "id": "PCEP-1100-039",
@@ -1014,15 +1014,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0xc)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0xa)",
     "options": [
-      "A) 0b1010xc",
-      "B) 15",
-      "C) 17",
-      "D) 19"
+      "A) 0b100xa",
+      "B) 10",
+      "C) 12",
+      "D) 14"
     ],
     "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0xc equivale a 12 decimal. 5 + 12 = 17."
+    "explanation": "0b10 equivale a 2 decimal. 0xa equivale a 10 decimal. 2 + 10 = 12."
   },
   {
     "id": "PCEP-1100-040",
@@ -1039,15 +1039,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end='!')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y$Z",
-      "D) XY$Z"
+      "B) XY!Z",
+      "C) X_Y\nZ",
+      "D) X_Y!Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-041",
@@ -1064,318 +1064,18 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.4))",
     "options": [
-      "A) -7",
-      "B) -8",
-      "C) -8.8",
-      "D) -9"
+      "A) -1",
+      "B) -2",
+      "C) -2.4",
+      "D) -3"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
   },
   {
     "id": "PCEP-1100-042",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x10)",
-    "options": [
-      "A) 0b1010x10",
-      "B) 19",
-      "C) 21",
-      "D) 23"
-    ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x10 equivale a 16 decimal. 5 + 16 = 21."
-  },
-  {
-    "id": "PCEP-1100-043",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='@')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y@Z",
-      "D) XY@Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-044",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.2))",
-    "options": [
-      "A) -4",
-      "B) -5",
-      "C) -5.2",
-      "D) -6"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
-  },
-  {
-    "id": "PCEP-1100-045",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0xc)",
-    "options": [
-      "A) 0b110xc",
-      "B) 13",
-      "C) 15",
-      "D) 17"
-    ],
-    "correct": "C",
-    "explanation": "0b11 equivale a 3 decimal. 0xc equivale a 12 decimal. 3 + 12 = 15."
-  },
-  {
-    "id": "PCEP-1100-046",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end=' ')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-047",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.9))",
-    "options": [
-      "A) -10",
-      "B) -8",
-      "C) -9",
-      "D) -9.9"
-    ],
-    "correct": "C",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
-  },
-  {
-    "id": "PCEP-1100-048",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0xc)",
-    "options": [
-      "A) 0b10100xc",
-      "B) 20",
-      "C) 22",
-      "D) 24"
-    ],
-    "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0xc equivale a 12 decimal. 10 + 12 = 22."
-  },
-  {
-    "id": "PCEP-1100-049",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY$Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-050",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.6))",
-    "options": [
-      "A) -6",
-      "B) -7",
-      "C) -7.6",
-      "D) -8"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
-  },
-  {
-    "id": "PCEP-1100-051",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0xa)",
-    "options": [
-      "A) 0b110xa",
-      "B) 11",
-      "C) 13",
-      "D) 15"
-    ],
-    "correct": "C",
-    "explanation": "0b11 equivale a 3 decimal. 0xa equivale a 10 decimal. 3 + 10 = 13."
-  },
-  {
-    "id": "PCEP-1100-052",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY$Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-053",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.7))",
-    "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.7",
-      "D) -5"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
-  },
-  {
-    "id": "PCEP-1100-054",
     "module": "fundamentals",
     "topic": "Literals",
     "subtopic": "Numeric Bases",
@@ -1398,6 +1098,306 @@
     ],
     "correct": "C",
     "explanation": "0b1010 equivale a 10 decimal. 0x8 equivale a 8 decimal. 10 + 8 = 18."
+  },
+  {
+    "id": "PCEP-1100-043",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) XY Z",
+      "C) X_Y\nZ",
+      "D) X_Y Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-044",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.2))",
+    "options": [
+      "A) -2",
+      "B) -3",
+      "C) -3.2",
+      "D) -4"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
+  },
+  {
+    "id": "PCEP-1100-045",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
+    "options": [
+      "A) 0b1010x8",
+      "B) 11",
+      "C) 13",
+      "D) 15"
+    ],
+    "correct": "C",
+    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
+  },
+  {
+    "id": "PCEP-1100-046",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X*Y\nZ",
+      "C) X*Y Z",
+      "D) XY Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-047",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.6))",
+    "options": [
+      "A) -5",
+      "B) -6",
+      "C) -6.6",
+      "D) -7"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
+  },
+  {
+    "id": "PCEP-1100-048",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x4)",
+    "options": [
+      "A) 0b1100x4",
+      "B) 10",
+      "C) 12",
+      "D) 8"
+    ],
+    "correct": "B",
+    "explanation": "0b110 equivale a 6 decimal. 0x4 equivale a 4 decimal. 6 + 4 = 10."
+  },
+  {
+    "id": "PCEP-1100-049",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end='$')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) XY$Z",
+      "C) X_Y\nZ",
+      "D) X_Y$Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-050",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.2))",
+    "options": [
+      "A) -3",
+      "B) -4",
+      "C) -4.2",
+      "D) -5"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+  },
+  {
+    "id": "PCEP-1100-051",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0xa)",
+    "options": [
+      "A) 0b100xa",
+      "B) 10",
+      "C) 12",
+      "D) 14"
+    ],
+    "correct": "C",
+    "explanation": "0b10 equivale a 2 decimal. 0xa equivale a 10 decimal. 2 + 10 = 12."
+  },
+  {
+    "id": "PCEP-1100-052",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
+    "options": [
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY@Z"
+    ],
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-053",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.4))",
+    "options": [
+      "A) -3",
+      "B) -4",
+      "C) -4.4",
+      "D) -5"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+  },
+  {
+    "id": "PCEP-1100-054",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
+    "options": [
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
   },
   {
     "id": "PCEP-1100-055",
@@ -1439,15 +1439,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.5))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.2))",
     "options": [
-      "A) -7",
-      "B) -8",
-      "C) -8.5",
-      "D) -9"
+      "A) -6",
+      "B) -7",
+      "C) -7.2",
+      "D) -8"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
   },
   {
     "id": "PCEP-1100-057",
@@ -1464,15 +1464,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
     "options": [
-      "A) 0b110x8",
-      "B) 11",
-      "C) 13",
-      "D) 9"
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
-    "correct": "B",
-    "explanation": "0b11 equivale a 3 decimal. 0x8 equivale a 8 decimal. 3 + 8 = 11."
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
   },
   {
     "id": "PCEP-1100-058",
@@ -1514,15 +1514,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.9))",
     "options": [
-      "A) -6",
-      "B) -7",
-      "C) -7.8",
-      "D) -8"
+      "A) -3",
+      "B) -4",
+      "C) -4.9",
+      "D) -5"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
   },
   {
     "id": "PCEP-1100-060",
@@ -1539,15 +1539,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x10)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x4)",
     "options": [
-      "A) 0b10000x10",
-      "B) 22",
-      "C) 24",
-      "D) 26"
+      "A) 0b110x4",
+      "B) 5",
+      "C) 7",
+      "D) 9"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0x10 equivale a 16 decimal. 8 + 16 = 24."
+    "explanation": "0b11 equivale a 3 decimal. 0x4 equivale a 4 decimal. 3 + 4 = 7."
   },
   {
     "id": "PCEP-1100-061",
@@ -1564,15 +1564,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
       "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "C) X-Y Z",
+      "D) XY Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-062",
@@ -1589,15 +1589,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.4))",
     "options": [
-      "A) -6",
-      "B) -7",
-      "C) -7.8",
-      "D) -8"
+      "A) -5",
+      "B) -6",
+      "C) -6.4",
+      "D) -7"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
   },
   {
     "id": "PCEP-1100-063",
@@ -1614,15 +1614,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0xc)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x10)",
     "options": [
-      "A) 0b10000xc",
-      "B) 18",
-      "C) 20",
-      "D) 22"
+      "A) 0b10100x10",
+      "B) 24",
+      "C) 26",
+      "D) 28"
     ],
     "correct": "C",
-    "explanation": "0b1000 equivale a 8 decimal. 0xc equivale a 12 decimal. 8 + 12 = 20."
+    "explanation": "0b1010 equivale a 10 decimal. 0x10 equivale a 16 decimal. 10 + 16 = 26."
   },
   {
     "id": "PCEP-1100-064",
@@ -1639,15 +1639,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) XY Z",
-      "C) X_Y\nZ",
-      "D) X_Y Z"
+      "B) X-Y\nZ",
+      "C) X-Y Z",
+      "D) XY Z"
     ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-065",
@@ -1664,243 +1664,18 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.3))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-9.4))",
     "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.3",
-      "D) -5"
+      "A) -10",
+      "B) -8",
+      "C) -9",
+      "D) -9.4"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+    "correct": "C",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -9."
   },
   {
     "id": "PCEP-1100-066",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x10)",
-    "options": [
-      "A) 0b1100x10",
-      "B) 20",
-      "C) 22",
-      "D) 24"
-    ],
-    "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0x10 equivale a 16 decimal. 6 + 16 = 22."
-  },
-  {
-    "id": "PCEP-1100-067",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end=' ')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) XY Z",
-      "C) X_Y\nZ",
-      "D) X_Y Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-068",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.9))",
-    "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.9",
-      "D) -4"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
-  },
-  {
-    "id": "PCEP-1100-069",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
-    "options": [
-      "A) 0b1100xc",
-      "B) 16",
-      "C) 18",
-      "D) 20"
-    ],
-    "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
-  },
-  {
-    "id": "PCEP-1100-070",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='!')\nprint('Z')",
-    "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y!Z",
-      "D) XY!Z"
-    ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-071",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.3))",
-    "options": [
-      "A) -1",
-      "B) -2",
-      "C) -2.3",
-      "D) -3"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
-  },
-  {
-    "id": "PCEP-1100-072",
-    "module": "fundamentals",
-    "topic": "Literals",
-    "subtopic": "Numeric Bases",
-    "difficulty": 3,
-    "estimated_time": 50,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "literals",
-      "binary",
-      "hexadecimal"
-    ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0xa)",
-    "options": [
-      "A) 0b10100xa",
-      "B) 18",
-      "C) 20",
-      "D) 22"
-    ],
-    "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0xa equivale a 10 decimal. 10 + 10 = 20."
-  },
-  {
-    "id": "PCEP-1100-073",
-    "module": "fundamentals",
-    "topic": "Basic IO",
-    "subtopic": "Print Separators",
-    "difficulty": 3,
-    "estimated_time": 45,
-    "bloom": "Apply",
-    "pattern": "Output Prediction",
-    "official_objective": "1.4",
-    "tags": [
-      "print",
-      "sep",
-      "end"
-    ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
-    "options": [
-      "A) None",
-      "B) X Y Z",
-      "C) XY\nZ",
-      "D) XY@Z"
-    ],
-    "correct": "D",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
-  },
-  {
-    "id": "PCEP-1100-074",
-    "module": "fundamentals",
-    "topic": "Casting",
-    "subtopic": "Type Conversion",
-    "difficulty": 2,
-    "estimated_time": 40,
-    "bloom": "Understand",
-    "pattern": "Output Prediction",
-    "official_objective": "1.2",
-    "tags": [
-      "casting",
-      "float",
-      "int"
-    ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.7))",
-    "options": [
-      "A) -3",
-      "B) -4",
-      "C) -4.7",
-      "D) -5"
-    ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
-  },
-  {
-    "id": "PCEP-1100-075",
     "module": "fundamentals",
     "topic": "Literals",
     "subtopic": "Numeric Bases",
@@ -1925,6 +1700,231 @@
     "explanation": "0b101 equivale a 5 decimal. 0xa equivale a 10 decimal. 5 + 10 = 15."
   },
   {
+    "id": "PCEP-1100-067",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='@')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y@Z",
+      "D) XY@Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-068",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.2))",
+    "options": [
+      "A) -7",
+      "B) -8",
+      "C) -8.2",
+      "D) -9"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
+  },
+  {
+    "id": "PCEP-1100-069",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0x8)",
+    "options": [
+      "A) 0b1100x8",
+      "B) 12",
+      "C) 14",
+      "D) 16"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0x8 equivale a 8 decimal. 6 + 8 = 14."
+  },
+  {
+    "id": "PCEP-1100-070",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='#', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X#Y\nZ",
+      "C) X#Y Z",
+      "D) XY Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '#'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-071",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.6))",
+    "options": [
+      "A) -5",
+      "B) -6",
+      "C) -6.6",
+      "D) -7"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
+  },
+  {
+    "id": "PCEP-1100-072",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
+    "options": [
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
+  },
+  {
+    "id": "PCEP-1100-073",
+    "module": "fundamentals",
+    "topic": "Basic IO",
+    "subtopic": "Print Separators",
+    "difficulty": 3,
+    "estimated_time": 45,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.4",
+    "tags": [
+      "print",
+      "sep",
+      "end"
+    ],
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
+    "options": [
+      "A) X Y Z",
+      "B) X-Y\nZ",
+      "C) X-Y Z",
+      "D) XY Z"
+    ],
+    "correct": "C",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
+  },
+  {
+    "id": "PCEP-1100-074",
+    "module": "fundamentals",
+    "topic": "Casting",
+    "subtopic": "Type Conversion",
+    "difficulty": 2,
+    "estimated_time": 40,
+    "bloom": "Understand",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "casting",
+      "float",
+      "int"
+    ],
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-4.5))",
+    "options": [
+      "A) -3",
+      "B) -4",
+      "C) -4.5",
+      "D) -5"
+    ],
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -4."
+  },
+  {
+    "id": "PCEP-1100-075",
+    "module": "fundamentals",
+    "topic": "Literals",
+    "subtopic": "Numeric Bases",
+    "difficulty": 3,
+    "estimated_time": 50,
+    "bloom": "Apply",
+    "pattern": "Output Prediction",
+    "official_objective": "1.2",
+    "tags": [
+      "literals",
+      "binary",
+      "hexadecimal"
+    ],
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b11 + 0x4)",
+    "options": [
+      "A) 0b110x4",
+      "B) 5",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": "C",
+    "explanation": "0b11 equivale a 3 decimal. 0x4 equivale a 4 decimal. 3 + 4 = 7."
+  },
+  {
     "id": "PCEP-1100-076",
     "module": "fundamentals",
     "topic": "Basic IO",
@@ -1939,15 +1939,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='_', end='@')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "B) XY@Z",
+      "C) X_Y\nZ",
+      "D) X_Y@Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '_'. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-077",
@@ -1964,15 +1964,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.8))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-8.7))",
     "options": [
-      "A) -4",
-      "B) -5",
-      "C) -5.8",
-      "D) -6"
+      "A) -7",
+      "B) -8",
+      "C) -8.7",
+      "D) -9"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -8."
   },
   {
     "id": "PCEP-1100-078",
@@ -1989,15 +1989,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xa)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b110 + 0xc)",
     "options": [
-      "A) 0b1100xa",
-      "B) 14",
-      "C) 16",
-      "D) 18"
+      "A) 0b1100xc",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
     "correct": "C",
-    "explanation": "0b110 equivale a 6 decimal. 0xa equivale a 10 decimal. 6 + 10 = 16."
+    "explanation": "0b110 equivale a 6 decimal. 0xc equivale a 12 decimal. 6 + 12 = 18."
   },
   {
     "id": "PCEP-1100-079",
@@ -2014,15 +2014,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='@')\nprint('Z')",
     "options": [
-      "A) X Y Z",
-      "B) X-Y\nZ",
-      "C) X-Y$Z",
-      "D) XY$Z"
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY@Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '@', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-080",
@@ -2039,15 +2039,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.6))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-2.4))",
     "options": [
       "A) -1",
-      "B) -1.6",
-      "C) -2",
-      "D) 0"
+      "B) -2",
+      "C) -2.4",
+      "D) -3"
     ],
-    "correct": "A",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
+    "correct": "B",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -2."
   },
   {
     "id": "PCEP-1100-081",
@@ -2064,15 +2064,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b10 + 0x8)",
     "options": [
-      "A) 0b1010x8",
-      "B) 11",
-      "C) 13",
-      "D) 15"
+      "A) 0b100x8",
+      "B) 10",
+      "C) 12",
+      "D) 8"
     ],
-    "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
+    "correct": "B",
+    "explanation": "0b10 equivale a 2 decimal. 0x8 equivale a 8 decimal. 2 + 8 = 10."
   },
   {
     "id": "PCEP-1100-082",
@@ -2089,15 +2089,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='!')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='', end='$')\nprint('Z')",
     "options": [
-      "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y!Z",
-      "D) XY!Z"
+      "A) None",
+      "B) X Y Z",
+      "C) XY\nZ",
+      "D) XY$Z"
     ],
-    "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '!', uniendo el siguiente print inmediatamente."
+    "correct": "D",
+    "explanation": "El argumento 'sep' une los argumentos posicionales con ''. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-083",
@@ -2114,15 +2114,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-6.7))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.1))",
     "options": [
-      "A) -5",
-      "B) -6",
-      "C) -6.7",
-      "D) -7"
+      "A) -4",
+      "B) -5",
+      "C) -5.1",
+      "D) -6"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -6."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
   },
   {
     "id": "PCEP-1100-084",
@@ -2139,15 +2139,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b101 + 0x8)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x8)",
     "options": [
-      "A) 0b1010x8",
-      "B) 11",
-      "C) 13",
-      "D) 15"
+      "A) 0b10100x8",
+      "B) 16",
+      "C) 18",
+      "D) 20"
     ],
     "correct": "C",
-    "explanation": "0b101 equivale a 5 decimal. 0x8 equivale a 8 decimal. 5 + 8 = 13."
+    "explanation": "0b1010 equivale a 10 decimal. 0x8 equivale a 8 decimal. 10 + 8 = 18."
   },
   {
     "id": "PCEP-1100-085",
@@ -2189,15 +2189,15 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-3.5))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-1.6))",
     "options": [
-      "A) -2",
-      "B) -3",
-      "C) -3.5",
-      "D) -4"
+      "A) -1",
+      "B) -1.6",
+      "C) -2",
+      "D) 0"
     ],
-    "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -3."
+    "correct": "A",
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -1."
   },
   {
     "id": "PCEP-1100-087",
@@ -2214,15 +2214,15 @@
       "binary",
       "hexadecimal"
     ],
-    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1010 + 0x4)",
+    "question": "¿Cuál es la salida decimal de este código?\n\nprint(0b1000 + 0x10)",
     "options": [
-      "A) 0b10100x4",
-      "B) 12",
-      "C) 14",
-      "D) 16"
+      "A) 0b10000x10",
+      "B) 22",
+      "C) 24",
+      "D) 26"
     ],
     "correct": "C",
-    "explanation": "0b1010 equivale a 10 decimal. 0x4 equivale a 4 decimal. 10 + 4 = 14."
+    "explanation": "0b1000 equivale a 8 decimal. 0x10 equivale a 16 decimal. 8 + 16 = 24."
   },
   {
     "id": "PCEP-1100-088",
@@ -2239,15 +2239,15 @@
       "sep",
       "end"
     ],
-    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='*', end='$')\nprint('Z')",
+    "question": "¿Qué imprime exactamente la ejecución del siguiente código?\n\nprint('X', 'Y', sep='-', end=' ')\nprint('Z')",
     "options": [
       "A) X Y Z",
-      "B) X*Y\nZ",
-      "C) X*Y$Z",
-      "D) XY$Z"
+      "B) X-Y\nZ",
+      "C) X-Y Z",
+      "D) XY Z"
     ],
     "correct": "C",
-    "explanation": "El argumento 'sep' une los argumentos posicionales con '*'. El argumento 'end' reemplaza el salto de línea por '$', uniendo el siguiente print inmediatamente."
+    "explanation": "El argumento 'sep' une los argumentos posicionales con '-'. El argumento 'end' reemplaza el salto de línea por ' ', uniendo el siguiente print inmediatamente."
   },
   {
     "id": "PCEP-1100-089",
@@ -2264,14 +2264,14 @@
       "float",
       "int"
     ],
-    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-5.0))",
+    "question": "¿Qué imprime la siguiente instrucción?\n\nprint(int(-7.9))",
     "options": [
-      "A) -4",
-      "B) -5",
-      "C) -5.0",
-      "D) -6"
+      "A) -6",
+      "B) -7",
+      "C) -7.9",
+      "D) -8"
     ],
     "correct": "B",
-    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -5."
+    "explanation": "int() aplicado a un número decimal flotante trunca la parte decimal barriendo hacia el cero, lo que resulta en -7."
   }
 ]
